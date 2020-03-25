@@ -24,6 +24,20 @@ h1 {
   margin: 0;
 }
 
+.name {
+  font-size: 1.2em;
+}
+
+.quote {
+  max-width: 800px;
+  margin: 4em auto;
+}
+
+.quote__text {
+  font-size: 2em;
+  /* font-weight: bold; */
+}
+
 .hero--diagonal {
   position: relative;
   background-color: transparent;
@@ -46,26 +60,158 @@ h1 {
   z-index: 1;
   padding: 30px;
 }
+
 .hero__content h2 {
   margin-top: 0;
   margin-bottom: 2em;
 }
-#donate-link {
+
+.donate-link {
   display: inline-block;
-  padding: 0.8em 1.2em;
+  padding: 0.3em 1em;
   border-radius: 10px;
-  background: rgb(255, 188, 107);
+  background: rgb(41, 36, 30);
+  color: rgb(255, 234, 207);
+  text-decoration: none;
+  transform: scale3d(1, 1, 1);
+  transition: all 0.2s;
+}
+.donate-link:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.donate--box .donate-link {
+  display: inline-block;
+  padding: 0.6em 1.1em;
+  border-radius: 10px;
+  /* color: rgb(41, 36, 30);
+  background: rgb(255, 188, 107); */
   text-decoration: none;
 }
 
 .donate--box {
   margin: 2em auto;
   border: 1px solid rgb(255, 188, 107);
+  background: rgb(255, 188, 107);
   border-radius: 2px;
-  padding: 1em;
+  padding: 2em 3em;
   max-width: 400px;
   text-align: center;
 }
+
+.blurs {
+  /* filter: blur(100px) opacity(1); */
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  overflow-x: hidden;
+  min-height: 2000px;
+  pointer-events: none;
+}
+
+.hero--image-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: calc(100% + 100px);
+  top: -50px;
+  clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+.hero--image-container:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+}
+
+.hero--image-container img {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  height: calc(100% + 50px);
+  object-fit: cover;
+  /* max-width: 100%; */
+}
+
+.intro {
+  font-size: 1.2em;
+  /* clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px)); */
+
+  background: rgb(255, 255, 255);
+  mix-blend-mode: overlay;
+  z-index: 3;
+}
+
+.intro:before {
+  clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
+  background: rgb(255, 255, 255);
+}
+
+.intro .hero--image-container {
+  mix-blend-mode: unset;
+  clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
+  opacity: 0.2;
+}
+
+.blurs div {
+  position: absolute;
+  mix-blend-mode: soft-light;
+  filter: blur(1000px);
+}
+
+.blur1 {
+  width: 40vw;
+  height: 40vw;
+  background: rgb(255, 188, 107);
+  border-radius: 50%;
+  top: 50px;
+  right: 0;
+}
+
+.blur2 {
+  width: 50vw;
+  height: 40vw;
+  background: rgb(242, 58, 255);
+  top: 200px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.blur3 {
+  width: 50vw;
+  height: 60vw;
+  background: rgb(121, 212, 153);
+  top: 400px;
+  right: 50px;
+  border-radius: 50%;
+}
+
+.blur4 {
+  width: 150vw;
+  height: 60vw;
+  background: rgb(165, 197, 255);
+  top: 400px;
+  left: 50px;
+  border-radius: 50%;
+}
+
+.blur5 {
+  width: 90vw;
+  height: 80vw;
+  background: rgb(253, 214, 166);
+  top: 800px;
+  left: -20%;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 35em) {
   .main {
     padding: 2em;
