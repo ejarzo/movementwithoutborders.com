@@ -26,6 +26,7 @@ p a {
   display: inline-block;
   border-bottom: 2px solid rgba(236, 174, 99, 0.875);
   font-weight: bold;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -65,6 +66,7 @@ h1 {
   left: 0;
   width: 100%;
   height: calc(100% + 100px);
+  -webkit-clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
   clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
   background: rgb(255, 188, 107);
 }
@@ -95,12 +97,15 @@ h1 {
   background: rgb(41, 36, 30);
   color: rgb(255, 234, 207);
   text-decoration: none;
+  -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   box-shadow: 0 0 30px -10px rgb(218, 97, 255);
 }
 
 .donate-link:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 1);
   transform: scale3d(1.1, 1.1, 1);
 }
 
@@ -129,6 +134,7 @@ h1 {
   width: 100%;
   height: calc(100% + 100px);
   top: -50px;
+  -webkit-clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
   clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
   mix-blend-mode: overlay;
   opacity: 0.5;
@@ -141,6 +147,7 @@ h1 {
   left: 0;
   width: 100%;
   height: calc(100% + 100px);
+  -webkit-clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
   clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
 }
 
@@ -149,6 +156,7 @@ h1 {
   top: -50px;
   width: 100%;
   height: calc(100% + 50px);
+  -o-object-fit: cover;
   object-fit: cover;
   /* max-width: 100%; */
 }
@@ -163,12 +171,14 @@ h1 {
 }
 
 .intro:before {
+  -webkit-clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
   clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
   background: rgb(255, 255, 255);
 }
 
 .intro .hero--image-container {
   mix-blend-mode: unset;
+  -webkit-clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
   clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
   opacity: 0.2;
 }
@@ -182,6 +192,7 @@ h1 {
   overflow-x: hidden;
   height: 100%;
   pointer-events: none;
+  -webkit-filter: blur(100px);
   filter: blur(100px);
 }
 
