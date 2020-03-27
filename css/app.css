@@ -214,8 +214,8 @@ h1 {
   overflow-x: hidden;
   height: 100%;
   pointer-events: none;
-  -webkit-filter: blur(100px);
-  filter: blur(100px);
+  /* -webkit-filter: blur(100px);
+  filter: blur(100px); */
   mix-blend-mode: overlay;
 }
 
