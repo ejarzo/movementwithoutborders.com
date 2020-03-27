@@ -16,7 +16,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 p a {
@@ -180,8 +180,8 @@ h1 {
 
 .intro .hero--image-container {
   /* mix-blend-mode: unset; */
-  background-image: url("img/unnamed-1.jpg");
-  background-blend-mode: overlay;
+  /* background-image: url("img/unnamed-1.jpg"); */
+  /* background-blend-mode: overlay; */
   -webkit-filter: contrast(2);
   filter: contrast(2);
   -webkit-clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
