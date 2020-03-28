@@ -1,28 +1,28 @@
 @keyframes fadeout {
   0% {
     opacity: 1;
-    transform: translate3d(100, 0, 0) scale3d(1.4, 1.4, 1);
+    transform: translate3d(100, 0, 0) scale3d(1.8, 1.8, 1);
   }
 
   100% {
     opacity: 0;
-    transform: translate3d(-100px, 0, 0) scale3d(1.2, 1.2, 1);
+    transform: translate3d(-10%, 0, 0) scale3d(1.5, 1.5, 1);
   }
 }
 @keyframes fadeinout {
   0% {
     opacity: 0;
-    transform: translate3d(200px, 0, 0) scale3d(1.5, 1.5, 1);
+    transform: translate3d(10%, 0, 0) scale3d(1.8, 1.8, 1);
   }
 
   50% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1);
+    transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
   }
 
   100% {
     opacity: 0;
-    transform: translate3d(-200px, 0, 0) scale3d(1.1, 1.1, 1);
+    transform: translate3d(-10%, 12%, 0) scale3d(1.3, 1.3, 1);
   }
 }
 
@@ -213,6 +213,9 @@ canvas#background {
 }
 .hero__image-container--top .img4 {
   animation-delay: 24s;
+}
+.hero__image-container--top .img5 {
+  animation-delay: 32s;
 }
 
 .intro {
