@@ -204,7 +204,7 @@ h1 {
 
 .background-blurs div {
   position: absolute;
-  mix-blend-mode: soft-light;
+  /* mix-blend-mode: soft-light; */
 }
 
 .foreground-blurs {
