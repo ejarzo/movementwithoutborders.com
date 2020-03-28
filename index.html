@@ -31,28 +31,25 @@
       </p>
     <![endif]-->
     <canvas id="background"></canvas>
-    <div class="background-blurs">
-      <div class="blur0"></div>
-      <div class="blur1"></div>
-      <div class="blur2"></div>
-      <div class="blur3"></div>
-      <div class="blur4"></div>
-      <div class="blur5"></div>
-      <div class="blur6"></div>
-    </div>
 
-    <div class="foreground-blurs">
+    <div class="foreground">
       <div class="blur1"></div>
-      <!-- <div class="blur2"></div> -->
-      <!-- <div class="blur3"></div> -->
-      <!-- <div class="blur4"></div> -->
       <div class="blur5"></div>
     </div>
 
     <div class="main">
-      <div class="hero--diagonal">
-        <div class="hero--image-container">
-          <img src="img/unnamed.jpg" />
+      <div class="hero hero--shadow hero--diagonal">
+        <div class="hero__image-container hero__image-container--top">
+          <img class="img1" src="img/unnamed.jpg" />
+          <img
+            class="img2"
+            src="img/01-migration-reference.ngsversion.1551384388645.adapt.1900.1.jpg"
+          />
+          <img class="img3" src="img/file-20190519-69213-1nc2ku5.jpg" />
+          <img
+            class="img4"
+            src="img/jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg"
+          />
         </div>
         <div class="hero__content">
           <h3>Judson Memorial Church presents</h3>
@@ -67,13 +64,8 @@
               55 Washington Square South, New York, NY
             </p>
             <p>
-              The event is free and open to the public!
-              <!-- <br />Donations will be accepted at the door - proceeds benefit
-              <a href="https://www.newsanctuarynyc.org/"
-                >New Sanctuary Coalition</a
-              >
-              <br />
-              If you wish, you may also support us online: -->
+              The event is free and open to the public! <br />
+              Suggested admission $20 at door
             </p>
             <!--  <div>
               <a
@@ -96,7 +88,7 @@
 
       <div>
         <div class="intro hero--diagonal">
-          <div class="hero--image-container">
+          <div class="hero__image-container">
             <img src="img/unnamed-1.jpg" />
           </div>
           <div class="hero__content">
@@ -257,6 +249,10 @@
           >
         </p>
       </div>
+      <!-- <img
+        class="bottom-image"
+        src="img/jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg"
+      /> -->
     </div>
 
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
