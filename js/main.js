@@ -122,25 +122,26 @@ function rotateBannerImages(bannerId, images) {
   rotateTimeout();
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const topImages = [
-    "unnamed-reduced.jpg",
-    "group1/reduced/clothes-drying-outside-shelter.jpg",
-    "group1/reduced/DSC_5349.jpg",
-    "group1/reduced/gravesite-3.jpg",
-    "group1/reduced/keep-your-chin-up.jpg",
-    // "group1/last-in-series-of-nuns-at-waters-edge.jpg",
-  ];
+const topImages = [
+  "unnamed-reduced.jpg",
+  "group1/reduced/clothes-drying-outside-shelter.jpg",
+  "group1/reduced/DSC_5349.jpg",
+  "group1/reduced/gravesite-3.jpg",
+  "group1/reduced/keep-your-chin-up.jpg",
+  // "group1/last-in-series-of-nuns-at-waters-edge.jpg",
+];
 
-  const bottomImages = [
-    "unnamed-1-reduced.jpg",
-    "group2/reduced/length-of-Jacumba-border-wall.jpg",
-    "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
-    "group2/reduced/salut-Tijuana.jpg",
-    "group2/reduced/sisters-sm.jpg",
-    "group2/reduced/two-new-best-friends.jpg",
-    "group2/reduced/Z-sm-and-the-border-wall-just-ends-copy.jpg",
-  ];
+const bottomImages = [
+  "unnamed-1-reduced.jpg",
+  "group2/reduced/length-of-Jacumba-border-wall.jpg",
+  "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
+  "group2/reduced/salut-Tijuana.jpg",
+  "group2/reduced/sisters-sm.jpg",
+  "group2/reduced/two-new-best-friends.jpg",
+  "group2/reduced/Z-sm-and-the-border-wall-just-ends-copy.jpg",
+];
+
+document.addEventListener("DOMContentLoaded", function () {
   drawBackground();
   rotateBannerImages("top-banner", topImages);
   rotateBannerImages("bottom-banner", bottomImages);
