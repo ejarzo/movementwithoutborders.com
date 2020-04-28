@@ -12,7 +12,7 @@ const drawEllipse = (
   ctx.fill();
 };
 
-document.addEventListener("DOMContentLoaded", function() {
+const drawBackground = () => {
   const body = document.body;
   const html = document.documentElement;
   const h = Math.max(
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     centerX: 1,
     centerY: 1,
     width: Math.max(800, 0.5 * w),
-    height: Math.max(800, 0.5 * w)
+    height: Math.max(800, 0.5 * w),
   });
 
   // top right
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     centerX: w,
     centerY: 1,
     width: Math.max(800, 0.5 * w),
-    height: Math.max(800, 0.5 * w)
+    height: Math.max(800, 0.5 * w),
   });
 
   // pink
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     left: isMobile ? -140 : 0,
     top: 1,
     width: Math.max(400, 0.8 * w),
-    height: Math.max(400, 0.4 * h)
+    height: Math.max(400, 0.4 * h),
   });
 
   // green
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     centerX: w - 50,
     top: 0.3 * h,
     width: Math.max(100, 0.7 * w),
-    height: Math.max(300, 0.3 * h)
+    height: Math.max(300, 0.3 * h),
   });
 
   // blue
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
     left: w - 80,
     top: 0.2 * h,
     width: Math.max(150, 1.5 * w),
-    height: Math.max(800, 0.8 * h)
+    height: Math.max(800, 0.8 * h),
   });
 
   // orange low
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
     left: 0 - 0.2 * w,
     top: 0.5 * h,
     width: Math.max(400, 0.9 * w),
-    height: Math.max(700, 0.9 * h)
+    height: Math.max(700, 0.9 * h),
   });
 
   // pink low
@@ -91,8 +91,12 @@ document.addEventListener("DOMContentLoaded", function() {
     centerY: h,
     centerX: w,
     width: Math.max(400, w),
-    height: Math.max(800, 0.5 * h)
+    height: Math.max(800, 0.5 * h),
   });
 
   boxBlurCanvasRGBA("background", 0, 0, w, h, 100, 1);
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  drawBackground();
 });
