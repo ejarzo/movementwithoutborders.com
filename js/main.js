@@ -97,6 +97,45 @@ const drawBackground = () => {
   boxBlurCanvasRGBA("background", 0, 0, w, h, 100, 1);
 };
 
+function rotateBannerImages(bannerId, images) {
+  let i = 0;
+  const rotateTimeout = () => {
+    if (i >= images.length) {
+      i = 0;
+    }
+
+    const newImg = document.createElement("img");
+    const banner = document.getElementById(bannerId);
+
+    newImg.src = `img/${images[i]}`;
+    banner.appendChild(newImg);
+
+    // remove the node once the fade out animation has finished
+    setTimeout(() => {
+      newImg.parentNode.removeChild(newImg);
+    }, 15 * 1000);
+
+    // do next image
+    setTimeout(rotateTimeout, 10 * 1000);
+    i++;
+  };
+  rotateTimeout();
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  const topImages = [
+    "unnamed.jpg",
+    "01-migration-reference.ngsversion.1551384388645.adapt.1900.1.jpg",
+    "file-20190519-69213-1nc2ku5.jpg",
+    "jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg",
+  ];
+
+  const bottomImages = [
+    "unnamed-1.jpg",
+    "578862.story_x_large.jpg",
+    "602921.story_x_large.jpg",
+  ];
   drawBackground();
+  rotateBannerImages("top-banner", topImages);
+  rotateBannerImages("bottom-banner", bottomImages);
 });

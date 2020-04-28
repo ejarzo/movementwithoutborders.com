@@ -199,26 +199,9 @@ canvas#background {
   object-fit: cover;
 }
 
-.hero__image-container--top img {
+.hero__image-container img {
   opacity: 0;
-  animation: 18s fadeinout linear;
-}
-
-.hero__image-container--top .img1 {
-  animation: 12s fadeout linear;
-}
-
-.hero__image-container--top .img2 {
-  animation-delay: 6s;
-}
-.hero__image-container--top .img3 {
-  animation-delay: 18s;
-}
-.hero__image-container--top .img4 {
-  animation-delay: 24s;
-}
-.hero__image-container--top .img5 {
-  animation-delay: 32s;
+  animation: 15s fadeinout linear;
 }
 
 .intro {
