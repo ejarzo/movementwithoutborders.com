@@ -51,7 +51,7 @@ const drawBackground = () => {
 
   // pink
   drawEllipse(ctx, {
-    color: "rgb(245, 101, 255)",
+    color: "rgba(245, 101, 255, 0.8)",
     left: isMobile ? -140 : 0,
     top: 1,
     width: Math.max(400, 0.8 * w),
@@ -98,14 +98,20 @@ const drawBackground = () => {
 };
 
 function rotateBannerImages(bannerId, images) {
-  let i = 0;
+  let i = 1;
+  const newImg = document.createElement("img");
+  const banner = document.getElementById(bannerId);
+
+  newImg.src = `img/${images[0]}`;
+  newImg.className = "first";
+  banner.appendChild(newImg);
+
   const rotateTimeout = () => {
     if (i >= images.length) {
       i = 0;
     }
 
     const newImg = document.createElement("img");
-    const banner = document.getElementById(bannerId);
 
     newImg.src = `img/${images[i]}`;
     banner.appendChild(newImg);
@@ -119,21 +125,27 @@ function rotateBannerImages(bannerId, images) {
     setTimeout(rotateTimeout, 10 * 1000);
     i++;
   };
-  rotateTimeout();
+  setTimeout(() => {
+    newImg.parentNode.removeChild(newImg);
+  }, 12 * 1000);
+  setTimeout(rotateTimeout, 8 * 1000);
 }
 
 const topImages = [
   "unnamed-reduced.jpg",
+  "group2/reduced/The-School-Box-project-.jpg",
+  "578866.story_x_large.jpg",
   "group1/reduced/clothes-drying-outside-shelter.jpg",
-  "group1/reduced/DSC_5349.jpg",
-  "group1/reduced/gravesite-3.jpg",
+  "group1/reduced/Door of Hope children dont understand.jpg",
   "group1/reduced/keep-your-chin-up.jpg",
+  "group1/reduced/interiror-Roca-de salvacion.jpg",
+  "group2/reduced/waters-edge-Tijuana.jpg",
   // "group1/last-in-series-of-nuns-at-waters-edge.jpg",
 ];
 
 const bottomImages = [
   "unnamed-1-reduced.jpg",
-  "group2/reduced/length-of-Jacumba-border-wall.jpg",
+  "Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg",
   "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
   "group2/reduced/salut-Tijuana.jpg",
   "group2/reduced/sisters-sm.jpg",
