@@ -133,13 +133,16 @@ function rotateBannerImages(bannerId, images) {
 
 const topImages = [
   "unnamed-reduced.jpg",
+  "xaviera-simmons-convene.jpg",
   "group2/reduced/The-School-Box-project-.jpg",
+  "jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg",
   "578866.story_x_large.jpg",
   "group1/reduced/clothes-drying-outside-shelter.jpg",
   "group1/reduced/Door of Hope children dont understand.jpg",
   "group1/reduced/keep-your-chin-up.jpg",
   "group1/reduced/interiror-Roca-de salvacion.jpg",
   "group2/reduced/waters-edge-Tijuana.jpg",
+  "Unknown-1.jpeg",
   // "group1/last-in-series-of-nuns-at-waters-edge.jpg",
 ];
 
@@ -149,6 +152,7 @@ const bottomImages = [
   "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
   "group2/reduced/salut-Tijuana.jpg",
   "group2/reduced/sisters-sm.jpg",
+  "web1_S1-MigrationPanel18-EDH-170203.jpg",
   "group2/reduced/two-new-best-friends.jpg",
   "group2/reduced/Z-sm-and-the-border-wall-just-ends-copy.jpg",
 ];
