@@ -130,6 +130,7 @@ canvas#background {
   font-size: 2em;
   margin-bottom: 10px;
   display: inline-block;
+  text-shadow: 0 0 8px rgba(153, 163, 255, 0.3);
   /*  background: -webkit-linear-gradient(
     20deg,
     rgb(49, 57, 128),
