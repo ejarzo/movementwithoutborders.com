@@ -137,12 +137,11 @@ const topImages = [
   "group2/reduced/The-School-Box-project-.jpg",
   "jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg",
   "578866.story_x_large.jpg",
-  "group1/reduced/clothes-drying-outside-shelter.jpg",
-  "group1/reduced/Door of Hope children dont understand.jpg",
-  "group1/reduced/keep-your-chin-up.jpg",
-  "group1/reduced/interiror-Roca-de salvacion.jpg",
-  "group2/reduced/waters-edge-Tijuana.jpg",
-  "Unknown-1.jpeg",
+  // "group1/reduced/clothes-drying-outside-shelter.jpg",
+  // "group1/reduced/Door of Hope children dont understand.jpg",
+  // "group1/reduced/keep-your-chin-up.jpg",
+  // "group1/reduced/interiror-Roca-de salvacion.jpg",
+  // "group2/reduced/waters-edge-Tijuana.jpg",
   // "group1/last-in-series-of-nuns-at-waters-edge.jpg",
 ];
 
@@ -155,11 +154,43 @@ const bottomImages = [
   "web1_S1-MigrationPanel18-EDH-170203.jpg",
   "group2/reduced/two-new-best-friends.jpg",
   "group2/reduced/Z-sm-and-the-border-wall-just-ends-copy.jpg",
+  "Unknown-1.jpeg",
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
+  const DURATION = 4;
   drawBackground();
-  rotateBannerImages("top-banner", topImages);
-  rotateBannerImages("bottom-banner", bottomImages);
+
+  const topBanner = document.getElementById("top-banner");
+  const bottomBanner = document.getElementById("bottom-banner");
+
+  topImages.forEach((url, i) => {
+    const newImg = document.createElement("img");
+    newImg.src = `img/${url}`;
+    newImg.className = `img-${i}`;
+    topBanner.appendChild(newImg);
+  });
+  // bottomImages.forEach((url, i) => {
+  //   const newImg = document.createElement("img");
+  //   newImg.src = `img/${url}`;
+  //   newImg.className = `img-${i}`;
+  //   bottomBanner.appendChild(newImg);
+  // });
+
+  let i = -1;
+  const rotateTimeout = () => {
+    i++;
+    if (i >= topImages.length) {
+      i = 0;
+    }
+    document.body.className = `active-img-${i}`;
+    setTimeout(rotateTimeout, DURATION * 1000);
+  };
+  setTimeout(rotateTimeout, 100);
+
+  // rotateTimeout();
+
+  // rotateBannerImages();
+  // rotateBannerImages("bottom-banner", bottomImages);
   // rotateBannerImages("footer-banner", bottomImages);
 });

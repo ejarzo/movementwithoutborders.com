@@ -1,0 +1,66 @@
+.hero__image-container--top img {
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(10%, 0, 0) scale3d(1.8, 1.8, 1);
+  transition: none;
+  top: 0;
+}
+.hero__image-container--top img {
+  transition-delay: 2000ms;
+}
+
+body.active-img-0 .img-0 {
+  opacity: 1;
+  transition: all linear 4s;
+  transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
+}
+
+body.active-img-1 .img-0 {
+  transition: all linear 4s;
+  opacity: 0;
+  transform: translate3d(-10%, 12%, 0) scale3d(1.3, 1.3, 1);
+}
+body.active-img-1 .img-1 {
+  transition: all linear 4s;
+  opacity: 1;
+  transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
+}
+
+body.active-img-2 .img-1 {
+  transition: all linear 4s;
+  opacity: 0;
+  transform: translate3d(-10%, 12%, 0) scale3d(1.3, 1.3, 1);
+}
+body.active-img-2 .img-2 {
+  transition: all linear 4s;
+  opacity: 1;
+  transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
+}
+
+body.active-img-3 .img-2 {
+  transition: all linear 4s;
+  opacity: 0;
+  transform: translate3d(-10%, 12%, 0) scale3d(1.3, 1.3, 1);
+}
+body.active-img-3 .img-3 {
+  transition: all linear 4s;
+  opacity: 1;
+  transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
+}
+
+body.active-img-4 .img-3 {
+  transition: all linear 4s;
+  opacity: 0;
+  transform: translate3d(-10%, 12%, 0) scale3d(1.3, 1.3, 1);
+}
+body.active-img-4 .img-4 {
+  transition: all linear 4s;
+  opacity: 1;
+  transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
+}
+
+body.active-img-0 .img-4 {
+  transition: all linear 4s;
+  opacity: 0;
+  transform: translate3d(-10%, 12%, 0) scale3d(1.3, 1.3, 1);
+}
