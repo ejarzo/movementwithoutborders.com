@@ -161,4 +161,5 @@ document.addEventListener("DOMContentLoaded", function () {
   drawBackground();
   rotateBannerImages("top-banner", topImages);
   rotateBannerImages("bottom-banner", bottomImages);
+  // rotateBannerImages("footer-banner", bottomImages);
 });
