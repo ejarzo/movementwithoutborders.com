@@ -137,16 +137,6 @@ const topImages = [
   "group2/reduced/The-School-Box-project-.jpg",
   "jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg",
   "578866.story_x_large.jpg",
-  // "group1/reduced/clothes-drying-outside-shelter.jpg",
-  // "group1/reduced/Door of Hope children dont understand.jpg",
-  // "group1/reduced/keep-your-chin-up.jpg",
-  // "group1/reduced/interiror-Roca-de salvacion.jpg",
-  // "group2/reduced/waters-edge-Tijuana.jpg",
-  // "group1/last-in-series-of-nuns-at-waters-edge.jpg",
-];
-
-const bottomImages = [
-  "unnamed-1-reduced.jpg",
   "Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg",
   "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
   "group2/reduced/salut-Tijuana.jpg",
@@ -158,7 +148,7 @@ const bottomImages = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-  const DURATION = 4;
+  const DURATION = 6;
   drawBackground();
 
   const topBanner = document.getElementById("top-banner");
