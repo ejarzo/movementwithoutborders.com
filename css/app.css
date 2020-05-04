@@ -320,47 +320,51 @@ canvas#background {
 }
 
 .section {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   margin-bottom: 3em;
-  display: -webkit-box;
-  display: flex;
 }
 
 .section h2 {
   font-family: "Averia Serif Libre";
   display: block;
   flex-basis: 150px;
+  font-size: 2em;
+  margin-bottom: 0;
+  position: relative;
+  margin-left: 10%;
+  left: -10%;
 }
 
 #music {
   color: rgb(90, 48, 83);
 }
 #music h2 {
-  text-shadow: 0 0 8px rgba(172, 95, 159, 0.6);
+  text-shadow: 0 0 8px rgba(172, 95, 159, 0.4);
 }
 #speakers {
   color: rgb(26, 68, 48);
 }
 #speakers h2 {
-  text-shadow: 0 0 8px rgba(93, 202, 149, 0.6);
+  text-shadow: 0 0 8px rgba(93, 202, 149, 0.4);
 }
 #dance {
   color: rgb(44, 50, 105);
 }
 #dance h2 {
-  text-shadow: 0 0 8px rgba(111, 121, 216, 0.6);
+  text-shadow: 0 0 8px rgba(111, 121, 216, 0.4);
 }
 #film {
   color: rgba(108, 51, 33, 1);
 }
 #film h2 {
-  text-shadow: 0 0 8px rgba(223, 131, 104, 0.6);
+  text-shadow: 0 0 8px rgba(223, 131, 104, 0.4);
 }
 
 .section p {
   -webkit-box-flex: 1;
   flex: 1;
+  margin-left: 10%;
 }
 .section p a {
   color: inherit !important;
@@ -466,8 +470,12 @@ canvas#background {
     flex-direction: column;
   }
   .section h2 {
+    left: 0;
     flex-basis: auto;
     margin: 0;
+  }
+  .section p {
+    margin-left: 0;
   }
   .donate--box {
     margin: 2em;
