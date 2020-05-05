@@ -97,40 +97,6 @@ const drawBackground = () => {
   boxBlurCanvasRGBA("background", 0, 0, w, h, 100, 1);
 };
 
-function rotateBannerImages(bannerId, images) {
-  let i = 1;
-  const newImg = document.createElement("img");
-  const banner = document.getElementById(bannerId);
-
-  newImg.src = `img/${images[0]}`;
-  newImg.className = "first";
-  banner.appendChild(newImg);
-
-  const rotateTimeout = () => {
-    if (i >= images.length) {
-      i = 0;
-    }
-
-    const newImg = document.createElement("img");
-
-    newImg.src = `img/${images[i]}`;
-    banner.appendChild(newImg);
-
-    // remove the node once the fade out animation has finished
-    setTimeout(() => {
-      newImg.parentNode.removeChild(newImg);
-    }, 15 * 1000);
-
-    // do next image
-    setTimeout(rotateTimeout, 10 * 1000);
-    i++;
-  };
-  setTimeout(() => {
-    newImg.parentNode.removeChild(newImg);
-  }, 12 * 1000);
-  setTimeout(rotateTimeout, 8 * 1000);
-}
-
 const topImages = [
   "unnamed-reduced.jpg",
   "xaviera-simmons-convene.jpg",
@@ -152,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
   drawBackground();
 
   const topBanner = document.getElementById("top-banner");
-  const bottomBanner = document.getElementById("bottom-banner");
 
   topImages.forEach((url, i) => {
     const newImg = document.createElement("img");
@@ -176,11 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.className = `active-img-${i}`;
     setTimeout(rotateTimeout, DURATION * 1000);
   };
+
   setTimeout(rotateTimeout, 100);
-
-  // rotateTimeout();
-
-  // rotateBannerImages();
-  // rotateBannerImages("bottom-banner", bottomImages);
-  // rotateBannerImages("footer-banner", bottomImages);
 });
