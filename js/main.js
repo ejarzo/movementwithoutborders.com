@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   drawBackground();
 
   const topBanner = document.getElementById("top-banner");
+  const bottomBanner = document.getElementById("bottom-banner");
 
   topImages.forEach((url, i) => {
     const newImg = document.createElement("img");
@@ -125,12 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
     newImg.className = `img-${i}`;
     topBanner.appendChild(newImg);
   });
-  // bottomImages.forEach((url, i) => {
-  //   const newImg = document.createElement("img");
-  //   newImg.src = `img/${url}`;
-  //   newImg.className = `img-${i}`;
-  //   bottomBanner.appendChild(newImg);
-  // });
+  topImages.forEach((url, i) => {
+    const newImg = document.createElement("img");
+    newImg.src = `img/${url}`;
+    newImg.className = `img-${i}`;
+    bottomBanner.appendChild(newImg);
+  });
 
   let i = -1;
   const rotateTimeout = () => {

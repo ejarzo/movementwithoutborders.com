@@ -1,4 +1,4 @@
-.hero__image-container--top img {
+.hero__image-container img {
   pointer-events: none;
   opacity: 0;
   transform: translate3d(10%, 0, 0) scale3d(1.8, 1.8, 1);

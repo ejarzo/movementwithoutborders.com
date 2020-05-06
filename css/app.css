@@ -42,7 +42,7 @@ body {
 }
 
 .font--display {
-  font-family: "Averia Serif Libre", "Georgia", serif;
+  font-family: "Neuton", "Georgia", serif;
 }
 
 .foreground {
@@ -119,13 +119,26 @@ canvas#background {
   z-index: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .name {
   font-size: 1.2em;
 }
 
+.fixed-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  /* z-index: 0; */
+}
+.fixed-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .video-grid {
   max-width: 690px;
   margin: 3em auto;
@@ -142,10 +155,21 @@ canvas#background {
 .video-grid-cell {
   width: 32%;
   margin: 0.5em;
+  border-radius: 2px;
+  overflow: hidden;
 }
 .video-grid-cell video {
   width: 100%;
-  /* box-shadow: 0 0 50px -5px rgb(249, 168, 70); */
+}
+.video-grid__attribution {
+  text-align: right;
+  font-size: 0.7em;
+  opacity: 0.5;
+  padding: 4px 10px;
+  transition: all 0.3s;
+}
+.video-grid__attribution:hover {
+  opacity: 1;
 }
 .quote {
   max-width: 690px;
@@ -252,6 +276,10 @@ canvas#background {
   mix-blend-mode: overlay;
   z-index: 3;
 }
+/* .hero--intro h2 {
+  font-size: 2.5em; 
+}
+ */
 
 .hero--intro:before {
   -webkit-clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% calc(100% - 50px));
@@ -290,7 +318,7 @@ canvas#background {
 .section h2 {
   display: block;
   flex-basis: 150px;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 0;
   position: relative;
   margin-left: 10%;
@@ -391,8 +419,12 @@ canvas#background {
   opacity: 0.3;
   z-index: -1;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 680px) {
   .main {
     z-index: 4;
     padding: 0;
@@ -411,7 +443,7 @@ canvas#background {
     padding-right: 2em;
   }
   .quote__text {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .section {
     padding-left: 2em;
@@ -434,8 +466,8 @@ canvas#background {
   h1 {
     font-size: 2em;
   }
-  .hero__content h2 {
-    font-size: 1em;
+  .hero--top h2 {
+    font-size: 1.2em;
   }
   .hero__content h3 {
     padding: 0;
