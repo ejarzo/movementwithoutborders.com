@@ -15,28 +15,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <!-- <link rel="stylesheet" href="css/parallax.css" /> -->
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/animation.css" />
     <meta name="theme-color" content="#FFE9CB" />
   </head>
 
   <body>
-    <div class="parallax">
+    <div>
       <canvas aria-hidden="true" id="background"></canvas>
-      <div
-        class="parallax-window"
-        data-parallax="scroll"
-        data-image-src="img/unnamed-1-reduced2.jpg"
-      ></div>
-      <div class="fixed-overlay">
+      <div aria-hidden="true" class="fixed-overlay">
         <img src="img/unnamed-1-reduced2.jpg" />
       </div>
-
       <div aria-hidden="true" class="foreground">
         <div class="overlay-circle-1"></div>
         <div class="overlay-circle-2"></div>
       </div>
+
       <div class="main">
         <div class="hero hero--top hero--shadow hero--diagonal">
           <div
@@ -44,7 +38,7 @@
             class="hero__image-container hero__image-container--top"
           ></div>
           <div class="hero__content">
-            <h3>Judson Memorial Church presents</h3>
+            <h3>Judson Memorial Church and S/C Projects present</h3>
             <h1 class="font--display">Movement Without Borders</h1>
             <h2>
               A Day of Performance To Benefit
@@ -156,7 +150,7 @@
             </div>
             <div class="video-grid__attribution">
               Untitled (Sketches 2020)<br />
-              Digital Videos <br />
+              Digital Videos<br />
               Xaviera Simmons Studio<br />
             </div>
           </div>
@@ -290,12 +284,6 @@
           <div id="bottom-banner" class="hero__image-container">
             <img src="img/group2/reduced/sisters-sm.jpg" />
           </div>
-          <!--  <div class="hero__content">
-          Please join us Saturday September 26th at Judson Memorial Church and
-          celebrate, through the power and solace of poetry, film, music and
-          dance, the importance of each person, amid a world of enormous
-          connectivity.
-        </div> -->
         </div>
 
         <div class="support-us-box">
@@ -337,15 +325,38 @@
               Duke Charitable Foundation.</em
             >
           </p>
-          <p>
-            <em
-              >Photographs by Kiki Smith, Tish Lampert, Xaviera Simmons, and
-              Jacob Lawrence. Website by Elias Jarzombek.</em
-            >
-          </p>
+
+          <div class="page-attribution">
+            <div class="page-attribution__cell">
+              <h3>Website Credits</h3>
+            </div>
+            <div class="page-attribution__cell">
+              <em>Lucy's Daughters</em>, 1990<br />
+              Kiki Smith<br />
+            </div>
+            <div class="page-attribution__cell">
+              <em>On Sculpture #2</em>, 2011<br />
+              Xaviera Simmons<br />
+            </div>
+            <div class="page-attribution__cell">
+              <em>Convene</em>, 2018<br />
+              Xaviera Simmons<br />
+            </div>
+            <div class="page-attribution__cell">
+              <em>The Migration Series</em>, 1941<br />
+              Jacob Lawrence<br />
+            </div>
+            <div class="page-attribution__cell">
+              Photographs by Tish Lampert<br />
+            </div>
+            <div class="page-attribution__cell">
+              Website by Elias Jarzombek<br />
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="js/blur.js"></script>
     <script src="js/main.js"></script>
