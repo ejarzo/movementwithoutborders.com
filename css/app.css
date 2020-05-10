@@ -129,6 +129,7 @@ canvas#background {
   height: 100%;
   pointer-events: none;
   mix-blend-mode: screen;
+  transform: translateZ(0);
   /* z-index: 0; */
 }
 .fixed-overlay img {
