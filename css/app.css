@@ -432,6 +432,30 @@ canvas#background {
     font-size: 3em;
   }
 }
+@media only screen and (min-width: 800px) {
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section {
+    box-sizing: border-box;
+    padding: 1em;
+    flex-basis: 50%;
+    max-width: none;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+  .section h2 {
+    margin-top: 0;
+    margin-left: 0%;
+    left: 0;
+  }
+  .section p {
+    margin-left: 0;
+    left: 0;
+  }
+}
+
 @media only screen and (max-width: 680px) {
   .main {
     z-index: 4;
