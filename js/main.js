@@ -100,17 +100,17 @@ const drawBackground = () => {
 const topImages = [
   "unnamed-reduced.jpg",
   "xaviera-simmons-convene.jpg",
-  "group2/reduced/The-School-Box-project-.jpg",
-  "jacoblawrence_migrationseries_panel388_wide-f5a56c15ad747562958fe34e80651a069f9049f0.jpg",
-  "578866.story_x_large.jpg",
-  "Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg",
-  "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
   "group2/reduced/salut-Tijuana.jpg",
   "group2/reduced/sisters-sm.jpg",
-  "web1_S1-MigrationPanel18-EDH-170203.jpg",
+  "jacob-lawrence-migration-series-2.jpg",
+  "Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg",
+  "group2/reduced/The-School-Box-project-.jpg",
+  "578866.story_x_large.jpg",
+  "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
+  "jacob-lawrence-migration-series-1.jpg",
   "group2/reduced/two-new-best-friends.jpg",
-  "group2/reduced/Z-sm-and-the-border-wall-just-ends-copy.jpg",
-  "Unknown-1.jpeg",
+  "group3/tish-lampert-one-last-touch.jpg",
+  "group3/tish-lampert-women-gathering-the-childen-for-community-hope.jpg",
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
