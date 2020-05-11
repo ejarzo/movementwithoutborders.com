@@ -159,7 +159,7 @@ canvas#background {
   width: 100%;
 }
 .video-grid__attribution {
-  text-align: left;
+  text-align: right;
   font-size: 0.7em;
   opacity: 0.5;
   padding: 4px 10px;
@@ -168,12 +168,16 @@ canvas#background {
 .video-grid__attribution:hover {
   opacity: 1;
 }
-
+.section-image .video-grid__attribution {
+  padding: 0;
+  margin-top: 4px;
+  color: rgb(51, 38, 24);
+}
 .page-attribution {
   margin-top: 5em;
 }
 .page-attribution__cell {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
   font-size: 0.7em;
   opacity: 0.5;
@@ -337,8 +341,6 @@ strong.page-attribution__cell {
   font-size: 2.5em;
   margin-bottom: 0;
   position: relative;
-  margin-left: 10%;
-  left: -10%;
 }
 
 #music {
@@ -368,13 +370,17 @@ strong.page-attribution__cell {
 
 .section p {
   flex: 1;
-  margin-left: 10%;
 }
 
 .section p a {
   color: inherit !important;
 }
-
+.hide-for-large {
+  display: block;
+}
+.show-for-large {
+  display: none;
+}
 .support-us-box {
   position: relative;
   z-index: 4;
@@ -436,14 +442,30 @@ strong.page-attribution__cell {
     font-size: 3em;
   }
 }
+
+.section-image {
+  margin-top: 3em;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
 @media only screen and (min-width: 800px) {
   .sections {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
-  .section {
+  .hide-for-large {
+    display: none;
+  }
+  .show-for-large {
+    display: block;
+  }
+  .section-column {
     box-sizing: border-box;
-    padding: 1em;
+    padding: 10px;
     flex-basis: 50%;
     max-width: none;
     margin: 0 auto;
