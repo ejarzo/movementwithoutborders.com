@@ -11,6 +11,7 @@
 }
 
 body.active-img-0 .img-0 {
+  transition: all linear 1s;
   opacity: 1;
   transition: opacity linear 1s, transform linear 6s;
   transform: translate3d(0, 6%, 0) scale3d(1.5, 1.5, 1);
