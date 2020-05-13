@@ -113,6 +113,22 @@ const topImages = [
   "group3/tish-lampert-women-gathering-the-childen-for-community-hope.jpg",
 ];
 
+const bottomImages = [
+  "group3/tish-lampert-sunset-in-tijuana.jpg",
+  "xaviera-simmons-convene.jpg",
+  "group2/reduced/salut-Tijuana.jpg",
+  "group2/reduced/sisters-sm.jpg",
+  "jacob-lawrence-migration-series-2.jpg",
+  "Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg",
+  "group2/reduced/The-School-Box-project-.jpg",
+  "578866.story_x_large.jpg",
+  "group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg",
+  "jacob-lawrence-migration-series-1.jpg",
+  "group2/reduced/two-new-best-friends.jpg",
+  "group3/tish-lampert-one-last-touch.jpg",
+  "group3/tish-lampert-women-gathering-the-childen-for-community-hope.jpg",
+];
+
 document.addEventListener("DOMContentLoaded", function () {
   const DURATION = 6;
   drawBackground();
@@ -126,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     newImg.className = `img-${i}`;
     topBanner.appendChild(newImg);
   });
-  topImages.forEach((url, i) => {
+  bottomImages.forEach((url, i) => {
     const newImg = document.createElement("img");
     newImg.src = `img/${url}`;
     newImg.className = `img-${i}`;
