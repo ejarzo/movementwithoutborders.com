@@ -196,6 +196,9 @@ canvas#background {
 
 .page-attribution {
   margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 570px;
 }
 
 strong.attribution {
@@ -341,7 +344,7 @@ strong.attribution {
   mix-blend-mode: overlay;
   z-index: 1;
   margin-top: 5em;
-  margin-bottom: -200px;
+  margin-bottom: -150px;
   min-height: 500px;
 }
 
@@ -451,6 +454,11 @@ strong.attribution {
   padding: 4em 2em;
   text-align: center;
 }
+
+.footer a {
+  display: inline-block;
+}
+
 .bottom-image {
   position: absolute;
   bottom: 0;
@@ -537,6 +545,9 @@ strong.attribution {
     padding-left: 2em;
     padding-right: 2em;
     flex-direction: column;
+  }
+  .footer a {
+    display: inline;
   }
   .section h2 {
     left: 0;
