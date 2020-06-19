@@ -3,3 +3,5 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 .DS_Store
+# Local Netlify folder
+.netlify
