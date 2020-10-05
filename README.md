@@ -1,8 +1,6 @@
-# [movementwithoutborders.com](https://www.movementwithoutborders.com/)
-
 _Judson Memorial Church and S/C Projects present_
 
-# Movement Without Borders 
+# Movement Without Borders ([movementwithoutborders.com](https://www.movementwithoutborders.com/))
 
 _A Day of Performance To Benefit New Sanctuary Coalition, New York Immigration Coalition and UnLocal_
 
