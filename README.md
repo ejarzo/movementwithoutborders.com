@@ -1,6 +1,9 @@
 # [movementwithoutborders.com](https://www.movementwithoutborders.com/)
 
-Judson Memorial Church and S/C Projects present **Movement Without Borders**
+_Judson Memorial Church and S/C Projects present_
+
+### Movement Without Borders 
+
 _A Day of Performance To Benefit New Sanctuary Coalition, New York Immigration Coalition and UnLocal_
 
 - October 2, 2021 11AM — 6:30PM
