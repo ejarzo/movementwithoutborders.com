@@ -2,7 +2,7 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 
-.DS_Store
+*.DS_Store
 # Local Netlify folder
 .netlify
 full-size
