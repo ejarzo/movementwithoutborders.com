@@ -1,3 +1,42 @@
+function posY(elm) {
+  var test = elm,
+    top = 0;
+
+  while (!!test && test.tagName.toLowerCase() !== "body") {
+    top += test.offsetTop;
+    test = test.offsetParent;
+  }
+
+  return top;
+}
+
+function viewPortHeight() {
+  var de = document.documentElement;
+
+  if (!!window.innerWidth) {
+    return window.innerHeight;
+  } else if (de && !isNaN(de.clientHeight)) {
+    return de.clientHeight;
+  }
+
+  return 0;
+}
+
+function scrollY() {
+  if (window.pageYOffset) {
+    return window.pageYOffset;
+  }
+  return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+}
+
+function checkvisible(elm) {
+  var vpH = viewPortHeight(), // Viewport Height
+    st = scrollY(), // Scroll Top
+    y = posY(elm);
+
+  return y > vpH + st;
+}
+
 const drawEllipse = (
   ctx,
   { color, left, top, width, height, centerX, centerY }
@@ -29,7 +68,7 @@ const drawBackground = () => {
   canvas.height = h;
   const ctx = canvas.getContext("2d");
   const isMobile = w < 520;
-  ctx.globalCompositeOperation = "soft-light";
+  // ctx.globalCompositeOperation = "soft-light";
 
   // top left
   drawEllipse(ctx, {
@@ -150,14 +189,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   let i = -1;
-  const rotateTimeout = () => {
+
+  const rotateImages = () => {
+    // const topBanner = document.getElementById("top-banner");
+    // const bottomBanner = document.getElementById("bottom-banner");
+
     i++;
     if (i >= topImages.length) {
       i = 0;
     }
     document.body.className = `active-img-${i}`;
-    setTimeout(rotateTimeout, DURATION * 1000);
   };
 
-  setTimeout(rotateTimeout, 100);
+  setTimeout(rotateImages, 100);
+  setInterval(rotateImages, DURATION * 1000);
 });

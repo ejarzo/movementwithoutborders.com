@@ -85,8 +85,8 @@ body {
   border-radius: 50%;
 }
 
-p a,
-.hero--top a {
+p a:not(.support-us-box__link),
+.hero--top a:not(.support-us-box__link) {
   color: rgb(41, 36, 30);
   /* height: calc(1em + 4px); */
   text-decoration: none;
@@ -99,7 +99,7 @@ p a,
 }
 
 p a:hover,
-.hero--top a:hover {
+.hero--top a:hover:not(.support-us-box__link) {
   background: rgba(236, 174, 99, 0.875);
 }
 /* p a:before,
@@ -117,7 +117,7 @@ p a:hover,
   box-shadow: 0 -2px 0 -0px rgba(241, 142, 21, 0.88) inset;
   /* border-bottom-color: rgba(241, 142, 21, 0.88); */
 }
-.hero--top a:hover {
+.hero--top a:hover:not(.support-us-box__link) {
   background: rgba(241, 142, 21, 0.88);
 }
 
