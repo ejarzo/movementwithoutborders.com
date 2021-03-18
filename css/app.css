@@ -432,7 +432,7 @@ strong.attribution {
   text-decoration: none;
   transform: scale3d(1, 1, 1);
   transition: all 0.2s;
-  box-shadow: 0 0 30px -10px rgba(218, 97, 255, 0.8);
+  box-shadow: 0 0 30px -10px rgba(218, 97, 255, 0.8) !important;
 }
 
 .support-us-box__link:hover {
