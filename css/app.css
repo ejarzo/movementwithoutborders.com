@@ -761,10 +761,10 @@ strong.attribution {
 .section p a {
   color: inherit !important;
 }
-.hide-for-large {
+.show-for-large {
   display: block;
 }
-.show-for-large {
+.show-for-mobile {
   display: none;
 }
 .support-us-box {
@@ -907,6 +907,12 @@ strong.attribution {
   padding-left: 1em;
 }
 @media screen and (max-width: 800px) {
+  .show-for-large {
+    display: none;
+  }
+  .show-for-mobile {
+    display: block;
+  }
   .main {
     padding: 0;
     margin: 0 auto;
@@ -961,7 +967,7 @@ strong.attribution {
     /* padding: 1em; */
     max-height: 50vh;
     overflow: hidden;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
     min-width: 0;
   }
   .hero--intro__title {
