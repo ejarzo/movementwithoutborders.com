@@ -303,7 +303,7 @@ canvas#background {
   margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 570px;
+  /* max-width: 570px; */
 }
 
 strong.attribution {
