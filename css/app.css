@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Gotham;
   font-weight: 200;
@@ -76,6 +80,7 @@ body {
 
 .max-width-container {
   max-width: 1200px;
+  /* padding: 0 2em; */
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -84,6 +89,7 @@ body {
 .bottom-container {
   margin-top: 15em;
   margin-bottom: 10em;
+  padding: 0 2em;
   display: flex;
 }
 
@@ -429,13 +435,13 @@ strong.attribution {
 
 .hero--intro {
   font-size: 1.2em;
-
+  padding: 0 2em;
   display: flex;
   /* flex-direction: row-reverse; */
 }
 
 .hero--intro__image {
-  min-width: 400px;
+  min-width: 340px;
 }
 
 .hero--intro h2 {
@@ -896,6 +902,10 @@ strong.attribution {
 .image-bottom {
   padding-left: 3em;
 }
+
+.hero--intro__title {
+  padding-left: 1em;
+}
 @media screen and (max-width: 800px) {
   .main {
     padding: 0;
@@ -920,22 +930,42 @@ strong.attribution {
     flex-direction: column;
   }
   .hero__text {
+    padding: 0 2em;
     /* max-width: none; */
     margin: 0 auto;
     margin-top: 2em;
+    flex-basis: unset;
+    width: 100%;
+    font-size: 80%;
+  }
+  .hero__text h3 {
+    margin-bottom: 0.5em;
+    position: relative;
+    left: 0.2em;
+  }
+  .info {
+    min-width: 0;
   }
   .quote {
+    margin-top: 3em;
+    margin-bottom: 3em;
     padding: 0 1em;
     max-width: 400px;
   }
   .hero--intro__image {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 0 auto;
-    padding: 1em;
+    /* padding: 1em; */
     max-height: 50vh;
     overflow: hidden;
     margin-bottom: 1em;
     min-width: 0;
+  }
+  .hero--intro__title {
+    padding-left: 0;
   }
   .hero--intro h2 {
     min-width: 0;
@@ -948,7 +978,8 @@ strong.attribution {
   .hero--intro__text {
     padding-top: 0;
     margin-left: 0;
-    padding: 1em;
+    padding: 0em;
+    margin-top: 1em;
   }
   .video-grid {
     padding: 0 1em;
@@ -959,7 +990,7 @@ strong.attribution {
     margin-top: 1em;
   }
   .section {
-    padding: 1em;
+    padding: 2em 2em 0;
   }
   .section h2 {
     margin-top: 0em;
@@ -978,7 +1009,7 @@ strong.attribution {
 
   .bottom-container {
     flex-direction: column-reverse;
-    padding: 1em;
+    /* padding: 0 7%; */
     margin-top: 11em;
   }
   .image-bottom {
