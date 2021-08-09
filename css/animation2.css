@@ -1,14 +1,10 @@
-.hero__image-container img {
+.slideshow img {
   pointer-events: none;
   opacity: 0;
   transform: translate3d(10%, 0, 0) scale3d(1.8, 1.8, 1);
   will-change: transform;
   transition: none;
   top: 0;
-}
-
-.hero__image-container--top img {
-  transition-delay: 2000ms;
 }
 
 body.active-img-0 .img-0 {
