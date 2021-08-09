@@ -241,7 +241,7 @@ canvas#background {
 
 .name {
   font-weight: 200;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .fixed-overlay {
@@ -346,7 +346,7 @@ strong.attribution {
   color: #0064a3;
   position: relative;
   /* text-shadow: 0 0 8px rgba(138, 146, 219, 0.3); */
-  animation: fade-in 3s ease-in-out;
+  animation: fade-in 2s ease-in-out;
 }
 
 .wave1 {
@@ -1015,8 +1015,9 @@ img {
   .quote {
     margin-top: 3em;
     margin-bottom: 3em;
-    padding: 0 1em;
+    padding: 0 2em;
     max-width: 400px;
+    /* font-size: 1.2em; */
   }
   .hero--intro__image {
     display: flex;
@@ -1093,5 +1094,14 @@ img {
   }
   .footer a {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-title {
+    font-size: 3em;
+  }
+  .info {
+    font-size: 70%;
   }
 }
