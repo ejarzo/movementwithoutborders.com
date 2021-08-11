@@ -88,5 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     images[next].className = `slideshow__image active`;
   };
 
+  rotateImages();
   setInterval(rotateImages, DURATION * 1000);
 });

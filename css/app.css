@@ -218,9 +218,8 @@ p a:hover,
   background: rgba(236, 174, 99, 0.875);
 } */
 
-.hero--top a {
-  /* box-shadow: 0 -2px 0 -0px rgba(241, 142, 21, 0.88) inset; */
-  /* border-bottom-color: rgba(241, 142, 21, 0.88); */
+.subtitle a {
+  display: inline-block;
 }
 /* .hero--top a:hover:not(.support-us-box__link) {
   background: rgba(241, 142, 21, 0.88);
@@ -569,6 +568,7 @@ strong.attribution {
   flex-grow: 1;
   width: 100%;
   border-radius: 3px;
+  background: #ddd;
 }
 
 .slideshow img {
@@ -650,7 +650,7 @@ strong.attribution {
   /* max-width: 600px; */
   margin: 0 auto;
   margin-bottom: 0;
-  padding-bottom: 50px;
+  padding-bottom: 1.5em;
   font-size: 1em;
 }
 .section .max-width-container {
@@ -902,7 +902,7 @@ strong.attribution {
 } */
 
 .sections {
-  margin-top: 5em;
+  margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -911,10 +911,10 @@ strong.attribution {
 
 .background-image {
   overflow: hidden;
-  height: calc(100% + 250px);
+  height: calc(100% + 450px);
   width: 100%;
   /* margin-top: -100px; */
-  top: -250px;
+  top: -400px;
   left: 0;
   position: absolute;
 }
@@ -1068,10 +1068,16 @@ img {
     margin-top: 1em;
     /* padding: 1em; */
   }
-  .background-image img {
-    min-width: 3000px;
-    top: 300px;
-    left: -180%;
+  .background-image {
+    /* min-width: 3000px; */
+    /* top: 300px; */
+    left: 0;
+    text-align: center;
+  }
+  .unnamed {
+    position: static;
+    display: inline-block;
+    height: 150%;
   }
 
   .bottom-container {
