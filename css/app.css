@@ -946,12 +946,12 @@ img {
   padding-left: 3em;
 }
 .dashed-box {
-  border: 1px dashed rgb(219, 219, 219);
+  border: 2px dashed #d3e4debd;
   padding: 1em;
   border-radius: 3px;
 }
 .donate-by-check {
-  border: 1px dashed rgb(219, 219, 219);
+  border: 2px dashed #d3e4debd;
   padding: 2em 3em;
   border-radius: 3px;
   margin-bottom: 10em;
