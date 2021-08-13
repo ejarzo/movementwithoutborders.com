@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Movement Without Borders</title>
@@ -10,108 +10,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Neuton&family=Sen:wght@400;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/animation.css" />
+    <!-- <link rel="stylesheet" href="css/animation2.css" /> -->
     <base target="_blank" />
     <meta name="theme-color" content="#FFE9CB" />
   </head>
 
   <body>
-    <div style="background: #ffe9cb">
-      <canvas aria-hidden="true" id="background"></canvas>
-      <div aria-hidden="true" class="fixed-overlay">
+    <div style="background-color: white">
+      <!-- <canvas aria-hidden="true" id="background"></canvas> -->
+      <!-- <div aria-hidden="true" class="fixed-overlay">
         <img src="img/unnamed-1-reduced2.jpg" />
-      </div>
-      <div aria-hidden="true" class="foreground">
+      </div> -->
+      <!-- <div aria-hidden="true" class="foreground">
         <div class="overlay-circle-1"></div>
         <div class="overlay-circle-2"></div>
-      </div>
+      </div> -->
 
       <div class="main">
-        <div class="hero hero--top hero--shadow hero--diagonal">
-          <div
-            id="top-banner"
-            class="hero__image-container hero__image-container--top"
-          ></div>
-          <div class="hero__content">
-            <h3>Judson Memorial Church and S/C Projects present</h3>
-            <h1 class="font--display">Movement Without Borders</h1>
-            <h2>
-              A Day of Performance To Celebrate
+        <div class="max-width-container hero--top">
+          <div class="hero-image-container">
+            <div class="hero-image-wrapper">
+              <img
+                class="hero__image"
+                src="img/poster/expressions-of-the-soul.jpg"
+                alt="The Expression Of The Soul XLIX -- artwork by Wladimiro Politano"
+              />
+            </div>
+            <div
+              class="attribution attribution--right"
+              style="padding-right: 0"
+            >
+              The Expression Of The Soul XLIX (2010)
+              <br />
+              Wladimiro Politano<br />
+            </div>
+          </div>
+          <div class="hero__text">
+            <div>
+              <h3>Judson Memorial Church and S/C Projects present</h3>
+              <h1 class="page-title font--display">
+                Movement<br />Without<br />Borders
+              </h1>
+            </div>
+
+            <div>
+              <p class="info">
+                <span class="justify info__date">OCTOBER 2, 2021</span><br />
+                <span class="justify info__location"
+                  ><a href="https://www.judson.org/"
+                    >Judson Memorial Church</a
+                  ></span
+                >
+                <span class="justify info__address">
+                  55 Washington Square South, New York, NY</span
+                >
+                <br />
+                <span class="justify info__time">11AM TO 6:30PM</span>
+              </p>
+            </div>
+
+            <h2 class="subtitle font-size-medium">
+              A day of performance to celebrate
               <a href="https://www.newsanctuarynyc.org/"
                 >New Sanctuary Coalition</a
               >,
               <a href="https://www.nyic.org/">New York Immigration Coalition</a
               >, <a href="https://www.unlocal.org/">UnLocal</a>, and
-              <a href="https://genteunida.net/">Gente Unida</a>
+              <a href="https://www.genteunidasd.net/">Gente Unida</a>
             </h2>
+
             <div>
-              <p>
-                October 2, 2021 11AM — 6:30PM<br />
-                <a href="https://www.judson.org/">Judson Memorial Church</a
-                ><br />
-                55 Washington Square South, New York, NY
-              </p>
-              <p>
-                The event is free and open to the public. Lunch served! <br />
+              <a
+                class="support-us-button font-size-medium"
+                href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
+                >Support Us
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="55px"
+                  height="40px"
+                  viewBox="0 0 100 100"
+                  enable-background="new 0 0 100 100"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                    />
+                  </g></svg
+              ></a>
+              <p class="dashed-box" style="line-height: 2">
+                The event is free and open to the public<br />Lunch served!
+                <br />
                 Suggested admission $20 at door
               </p>
             </div>
-            <div>
-              <a
-                class="support-us-box__link"
-                href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
-                >Support Us</a
-              >
-            </div>
           </div>
+        </div>
+
+        <div
+          aria-hidden="true"
+          style="
+            height: 150px;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            margin-top: 3em;
+          "
+        >
+          <svg
+            class="wave1"
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100vw; position: absolute; top: 0"
+          >
+            <path
+              d="M0.00,49.98 C105.24,160.35 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="fill: #89cbbc61"
+            ></path>
+          </svg>
+          <svg
+            class="wave2"
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100vw; position: absolute; top: 55px"
+          >
+            <path
+              d="M0.00,49.98 C126.97,113.97 405.75,-35.03 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="fill: #89cbbc61"
+            ></path>
+          </svg>
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100vw; position: absolute; top: 80px"
+          >
+            <path
+              d="M0.00,49.98 C123.02,100.15 450.90,-34.05 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="fill: #fff"
+            ></path>
+          </svg>
         </div>
 
         <div class="quote">
-          <span class="quote__text font--display"
-            >“Because of the transient nature of human life, migration is the
-            starting point for everybody.”</span
-          ><br />
-          <span class="quote__author">Mohsin Hamid</span>
+          <span class="quote__text font--display">
+            <span
+              >&ldquo;Because of the transient nature of human life, migration
+              is the starting point for everybody.&rdquo;</span
+            >
+          </span>
+          <div class="quote__author font-size-medium">Mohsin Hamid</div>
         </div>
 
-        <div class="hero--intro hero--diagonal">
-          <div id="intro-banner" class="hero__image-container">
-            <!-- <img src="img/unnamed-1-reduced2.jpg" /> -->
-          </div>
-          <div class="hero__content">
-            <h2 class="font--display" style="margin-bottom: 1em">
-              A Day of Performance that Surpasses Boundary
-            </h2>
-            <div class="hero__content__text-wrapper">
-              <div class="hero__content__text">
+        <div class="max-width-container">
+          <div class="hero--intro">
+            <!-- <div id="intro-banner" class="hero__image-container">
+              <img src="img/unnamed-1-reduced2.jpg" />
+            </div> -->
+            <div class="hero--intro__image">
+              <img
+                alt="Photograph depicting two women embracing. The older woman on the left holds the younger woman's face in her hands"
+                style="width: 100%; border-radius: 3px"
+                src="img/group2/reduced/sisters-sm.jpg"
+              />
+              <div
+                class="attribution attribution--right show-for-large"
+                style="padding-right: 0"
+              >
+                My Sister - Door of Hope (November 2017)<br />
+                Photo by Tish Lampert<br />
+              </div>
+            </div>
+            <div class="attribution attribution--right show-for-mobile">
+              My Sister - Door of Hope (November 2017)<br />
+              Photo by Tish Lampert<br />
+            </div>
+
+            <div>
+              <div class="hero--intro__title">
+                <h2 class="font--display">
+                  A Day of Performance that Surpasses Boundary
+                </h2>
+              </div>
+
+              <div class="hero--intro__text font-size-medium">
                 <p style="margin-top: 0">
                   Please join us in celebrating migration as integral to the DNA
                   of America, in a day that has humanity at its core: migration
                   as the movement that is human life, the reality of ourselves,
                   a shaper of evolution.
                 </p>
-                <div class="hide-for-large">
-                  <div
-                    class="section-image"
-                    style="width: min-content; margin: 0 auto"
-                  >
-                    <img
-                      loading="lazy"
-                      style="max-height: 340px"
-                      src="img/group2/reduced/sisters-sm.jpg"
-                    />
-                    <div class="attribution attribution--right">
-                      My Sister - Door of Hope (November 2017)<br />
-                      Photo by Tish Lampert<br />
-                    </div>
-                  </div>
-                </div>
                 <p>
                   On <strong>Saturday, October 2, 2021</strong>, dancers,
                   musicians, filmmakers, poets and immigration advocates will
@@ -135,335 +232,554 @@
                   <a href="https://www.nyic.org/"
                     >New York Immigration Coalition</a
                   >, <a href="https://www.unlocal.org/">UnLocal</a>, and
-                  <a href="https://genteunida.net/">Gente Unida</a>, four
+                  <a href="https://www.genteunidasd.net/">Gente Unida</a>, four
                   dynamic New York and San Diego-based organizations that create
                   support systems for those navigating the immigration system.
                 </p>
+                <a
+                  class="support-us-button"
+                  href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
+                  >Support Us
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="55px"
+                    height="40px"
+                    viewBox="0 0 100 100"
+                    enable-background="new 0 0 100 100"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                      />
+                    </g></svg
+                ></a>
               </div>
-              <div
-                class="hero__content__image show-for-large"
-                style="flex-basis: 34%"
-              >
-                <div class="section-image" style="margin: 0">
+            </div>
+          </div>
+        </div>
+
+        <div style="position: relative">
+          <!-- <div
+            class="max-width-container"
+            style="margin-top: 4em; padding: 0 2em"
+          >
+            <img
+              alt="Salut, Tijuana -- photograph by Tish Lampert"
+              src="img/group2/reduced/salut-Tijuana.jpg"
+              style="width: 100%"
+            />
+            <div
+              class="attribution attribution--right"
+              style="padding-right: 0"
+            >
+              Salut, Tijuana (February 2020)<br />
+              Photo by Tish Lampert<br />
+            </div>
+          </div> -->
+          <!-- <div class="video-grid">
+            <div class="video-grid-container">
+              <div class="video-grid-row">
+                <div class="video-grid-cell">
+                  <video autoplay playsinline loop muted>
+                    <source type="video/mp4" src="video/group2/flowers.mp4" />
+                  </video>
+                </div>
+                <div class="video-grid-cell">
+                  <video autoplay playsinline loop muted>
+                    <source type="video/mp4" src="video/group2/waves.mp4" />
+                  </video>
+                </div>
+                <div class="video-grid-cell">
+                  <video autoplay playsinline loop muted>
+                    <source type="video/mp4" src="video/group2/tallgrass.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="video-grid-row">
+                <div class="video-grid-cell">
+                  <video autoplay playsinline loop muted>
+                    <source type="video/mp4" src="video/group2/trees.mp4" />
+                  </video>
+                </div>
+                <div class="video-grid-cell">
+                  <video autoplay playsinline loop muted>
+                    <source type="video/mp4" src="video/group2/grass.mp4" />
+                  </video>
+                </div>
+
+                <div class="video-grid-cell">
+                  <video autoplay playsinline loop muted>
+                    <source type="video/mp4" src="video/group2/sand.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="attribution attribution--right">
+                Untitled (Sketches 2020)<br />
+                Digital Videos<br />
+                Xaviera Simmons Studio<br />
+              </div>
+            </div>
+          </div> -->
+          <div class="sections">
+            <div class="background-image">
+              <img
+                alt="Background image: Lucy's Daughters by Kiki Smith"
+                class="unnamed"
+                src="img/unnamed-2.svg"
+              />
+            </div>
+            <div id="speakers" class="section">
+              <div class="max-width-container">
+                <div><h2 class="font--display">Speakers</h2></div>
+                <p>
+                  Poet
+                  <a
+                    href="https://www.poetryfoundation.org/poets/claudia-rankine"
+                    class="name"
+                    >Claudia Rankine</a
+                  >
+                  and
+                  <a href="https://theracialimaginary.org/" class="name"
+                    >The Racial Imaginary Institute</a
+                  >
+                  with visual artist
+                  <a
+                    href="https://davidcastillogallery.com/artists/xaviera-simmons/"
+                    class="name"
+                    >Xaviera Simmons</a
+                  >; writer
+                  <a
+                    href="https://www.penguinrandomhouse.com/authors/59367/margo-jefferson/"
+                    class="name"
+                    >Margo Jefferson</a
+                  >;
+                  <a
+                    href="https://filmfreeway.com/HumanoFilmFestival"
+                    class="name"
+                    >Hermes Lopez</a
+                  >, Director of Humano Film Festival @ Tijuana, Mexico;
+                  <a
+                    href="https://www.genteunidasd.net/enrique-morones-2/"
+                    class="name"
+                    >Enrique Morones</a
+                  >, Founder/Director of Gente Unida and Founder/Former Director
+                  of Border Angels;
+                  <a href="https://istandwithravi.org/about/" class="name"
+                    >Ravi Ragbir</a
+                  >, Executive Director, and
+                  <a href="https://www.newsanctuarynyc.org/" class="name"
+                    >Janice Hoseine</a
+                  >, Program Director of New Sanctuary Coalition;
+                  <strong class="name">Members</strong> of New York Immigration
+                  Coalition and UnLocal;
+                  <a
+                    href="https://www.berklee.edu/people/roger-h-brown"
+                    class="name"
+                    >Roger H. Brown,</a
+                  >
+                  President of Berklee College of Music,
+                  <a href="http://classic.judson.org/MicahBucey" class="name"
+                    >Reverend Micah Bucey</a
+                  >
+                  of Judson Memorial Church, and music producer/activist
+                  <a href="https://www.imdb.com/name/nm0730056/bio" class="name"
+                    >Raoul Roach</a
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <div id="music" class="section">
+              <div class="max-width-container">
+                <div><h2 class="font--display">Music</h2></div>
+                <p>
+                  Special guest, drummer/composer
+                  <a class="name" href="https://www.antoniosanchez.net"
+                    >Antonio Sanchez &amp; Migration</a
+                  >
+                  with singer
+                  <a class="name" href="https://www.thanalexa.com/"
+                    >Thana Alexa</a
+                  >
+                  and poet
+                  <a class="name" href="http://mendozapoetry.com/"
+                    >Jonathan Mendoza</a
+                  >
+                  performing from Sanchez's 2019 album
+                  <em>Lines in the Sand</em>, the brilliant music protest
+                  against injustice in our current political climate and a
+                  tribute to every immigrant’s journey.
+                </p>
+                <!-- <div class="section-image hide-for-large">
                   <img
+                    loading="lazy"
+                    src="img/group2/reduced/salut-Tijuana.jpg"
                     style="width: 100%"
-                    src="img/group2/reduced/sisters-sm.jpg"
                   />
                   <div class="attribution attribution--right">
-                    My Sister - Door of Hope (November 2017)<br />
+                    Salut, Tijuana (February 2020)<br />
                     Photo by Tish Lampert<br />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-grid">
-          <div class="video-grid-container">
-            <div class="video-grid-row">
-              <div class="video-grid-cell">
-                <video autoplay playsinline loop muted>
-                  <source type="video/mp4" src="video/group2/flowers.mp4" />
-                </video>
-              </div>
-              <div class="video-grid-cell">
-                <video autoplay playsinline loop muted>
-                  <source type="video/mp4" src="video/group2/waves.mp4" />
-                </video>
-              </div>
-              <div class="video-grid-cell">
-                <video autoplay playsinline loop muted>
-                  <source type="video/mp4" src="video/group2/tallgrass.mp4" />
-                </video>
-              </div>
-            </div>
-            <div class="video-grid-row">
-              <div class="video-grid-cell">
-                <video autoplay playsinline loop muted>
-                  <source type="video/mp4" src="video/group2/trees.mp4" />
-                </video>
-              </div>
-              <div class="video-grid-cell">
-                <video autoplay playsinline loop muted>
-                  <source type="video/mp4" src="video/group2/grass.mp4" />
-                </video>
-              </div>
-
-              <div class="video-grid-cell">
-                <!-- <img src="gif/sand.gif" style="width: 100%;" /> -->
-                <video autoplay playsinline loop muted>
-                  <source type="video/mp4" src="video/group2/sand.mp4" />
-                </video>
-              </div>
-            </div>
-            <div class="attribution attribution--right">
-              Untitled (Sketches 2020)<br />
-              Digital Videos<br />
-              Xaviera Simmons Studio<br />
-            </div>
-          </div>
-        </div>
-
-        <div class="sections">
-          <div class="section-column">
-            <div id="music" class="section">
-              <h2 class="shimmer font--display">Music</h2>
-              <p>
-                Special guest, drummer/composer
-                <a class="name" href="https://www.antoniosanchez.net"
-                  >Antonio Sanchez &amp; Migration</a
-                >
-                with singer
-                <a class="name" href="https://www.thanalexa.com/"
-                  >Thana Alexa</a
-                >
-                and poet
-                <a class="name" href="http://mendozapoetry.com/"
-                  >Jonathan Mendoza</a
-                >
-                performing from Sanchez's 2019 album <em>Lines in the Sand</em>,
-                the brilliant music protest against injustice in our current
-                political climate and a tribute to every immigrant’s journey.
-              </p>
-              <div class="section-image hide-for-large">
-                <img
-                  loading="lazy"
-                  src="img/group2/reduced/salut-Tijuana.jpg"
-                  style="width: 100%"
-                />
-                <div class="attribution attribution--right">
-                  Salut, Tijuana (February 2020)<br />
-                  Photo by Tish Lampert<br />
-                </div>
+                </div> -->
               </div>
             </div>
 
             <div id="dance" class="section">
-              <h2 class="font--display">Dance</h2>
-              <p>
-                Performances by dancer/choreographers
-                <a
-                  class="name"
-                  href="https://www.nytimes.com/2019/04/09/arts/dance/stephen-petronio-rudy-perez-coverage.html"
-                  >Ernesto Breton</a
-                >/<a
-                  class="name"
-                  href="https://www.kcet.org/shows/artbound/from-the-bronx-to-los-angeles-the-legacy-of-rudy-perez"
-                  >Rudy Perez</a
-                >,
-                <a class="name" href="https://www.physicalmomentumproject.com/"
-                  >Francisco Cordova</a
-                >,
-                <a
-                  class="name"
-                  href="https://www.scenariopubblico.com/en/profili/edivaldo-ernesto/"
-                  >Edivaldo Ernesto</a
-                >,
-                <a class="name" href="http://thefrancescaharperproject.org/"
-                  >Francesca Harper</a
-                >,
-                <a
-                  class="name"
-                  href="http://www.horaciomacuacua.com/home/biography/"
-                  >Horacio Macuacua</a
-                >,
-                <a
-                  class="name"
-                  href="https://newyorklivearts.org/artist/jimena-paz/"
-                  >Jimena Paz</a
-                >,
-                <a class="name" href="https://shamelpitts.com/">Shamel Pitts</a
-                >, and
-                <a
-                  class="name"
-                  href="http://www.marianavalencia.work/choreography/"
-                  >Mariana Valencia</a
-                >, and multidisciplinary artist
-                <a
-                  class="name"
-                  href="https://fishercenter.bard.edu/events/naturalized-borders/"
-                  >Emilio Rojas</a
-                >.
-              </p>
+              <div class="max-width-container">
+                <div><h2 class="font--display">Dance</h2></div>
+                <p>
+                  Performances by dancer/choreographers
+                  <a
+                    class="name"
+                    href="https://www.nytimes.com/2019/04/09/arts/dance/stephen-petronio-rudy-perez-coverage.html"
+                    >Ernesto Breton</a
+                  >/<a
+                    class="name"
+                    href="https://www.kcet.org/shows/artbound/from-the-bronx-to-los-angeles-the-legacy-of-rudy-perez"
+                    >Rudy Perez</a
+                  >,
+                  <a
+                    class="name"
+                    href="https://www.physicalmomentumproject.com/"
+                    >Francisco Cordova</a
+                  >,
+                  <a
+                    class="name"
+                    href="https://www.scenariopubblico.com/en/profili/edivaldo-ernesto/"
+                    >Edivaldo Ernesto</a
+                  >,
+                  <a class="name" href="http://thefrancescaharperproject.org/"
+                    >Francesca Harper</a
+                  >,
+                  <a
+                    class="name"
+                    href="http://www.horaciomacuacua.com/home/biography/"
+                    >Horacio Macuacua</a
+                  >,
+                  <a
+                    class="name"
+                    href="https://newyorklivearts.org/artist/jimena-paz/"
+                    >Jimena Paz</a
+                  >,
+                  <a class="name" href="https://shamelpitts.com/"
+                    >Shamel Pitts | TRIBE </a
+                  >, and
+                  <a
+                    class="name"
+                    href="http://www.marianavalencia.work/choreography/"
+                    >Mariana Valencia</a
+                  >, and multidisciplinary artist
+                  <a
+                    class="name"
+                    href="https://fishercenter.bard.edu/events/naturalized-borders/"
+                    >Emilio Rojas</a
+                  >.
+                </p>
+              </div>
             </div>
 
             <div id="film" class="section">
-              <h2 class="font--display">Film</h2>
-              <p>
-                Best Documentary Short Films from
-                <a
-                  href="https://filmfreeway.com/HumanoFilmFestival"
-                  class="name"
-                  >Humano Film Festival</a
-                >
-                @ Tijuana, Mexico,
-                <a
-                  href="http://www.gallerialaveronica.it/artists/adelita-husni-bey/"
-                  class="name"
-                  >Adelita Husni-Bey</a
-                >’s
-                <a
-                  class="name"
-                  href="https://www.newmuseum.org/exhibitions/view/adelita-husni-bey-chiron"
-                  ><em>Chiron</em></a
-                >
-                and the border photojournalism of
-                <a class="name" href="https://www.tishlampert.org/"
-                  >Tish Lampert</a
-                >, presented by the artists with poet
-                <a class="name" href="https://www.sibanisen.com/">Sibani Sen</a>
-                and
-                <a
-                  class="name"
-                  href="http://www.anirfoundation.org/Adrienne_Belafonte_Biesemeyer.html"
-                  >Adrienne Belafonte Biesemeyer</a
-                >.
-              </p>
-            </div>
-          </div>
-          <div class="section-column">
-            <div id="speakers" class="section">
-              <h2 class="font--display">Speakers</h2>
-              <p>
-                Poet
-                <a
-                  href="https://www.poetryfoundation.org/poets/claudia-rankine"
-                  class="name"
-                  >Claudia Rankine</a
-                >
-                and
-                <a href="https://theracialimaginary.org/" class="name"
-                  >The Racial Imaginary Institute</a
-                >
-                with visual artist
-                <a
-                  href="https://davidcastillogallery.com/artists/xaviera-simmons/"
-                  class="name"
-                  >Xaviera Simmons</a
-                >;
-                <a
-                  href="https://filmfreeway.com/HumanoFilmFestival"
-                  class="name"
-                  >Hermes Lopez</a
-                >, Director of Humano Film Festival @ Tijuana, Mexico;
-                <a href="https://genteunida.net/who-we-are/" class="name"
-                  >Enrique Morones</a
-                >, Founder/Director of Gente Unida and Founder/Former Director
-                of Border Angels;
-                <a href="https://istandwithravi.org/about/" class="name"
-                  >Ravi Ragbir</a
-                >, Executive Director, and
-                <a
-                  href="https://www.newsanctuarynyc.org/who_is_nsc"
-                  class="name"
-                  >Janice Hoseine</a
-                >, Program Director of New Sanctuary Coalition;
-                <strong class="name">Members</strong> of New York Immigration
-                Coalition and UnLocal;
-                <a
-                  href="https://www.berklee.edu/people/roger-h-brown"
-                  class="name"
-                  >Roger H. Brown,</a
-                >
-                President of Berklee College of Music,
-                <a href="http://classic.judson.org/MicahBucey" class="name"
-                  >Reverend Micah Bucey</a
-                >
-                of Judson Memorial Church, and music producer/activist
-                <a href="https://www.imdb.com/name/nm0730056/bio" class="name"
-                  >Raoul Roach</a
-                >.
-              </p>
-              <div class="section-image show-for-large">
-                <img
-                  src="img/group2/reduced/salut-Tijuana.jpg"
-                  style="width: 100%"
-                />
-                <div class="attribution attribution--right">
-                  Salut, Tijuana (February 2020)<br />
-                  Photo by Tish Lampert<br />
-                </div>
+              <div class="max-width-container">
+                <div><h2 class="font--display">Film</h2></div>
+                <p>
+                  Best Documentary Short Films from
+                  <a
+                    href="https://filmfreeway.com/HumanoFilmFestival"
+                    class="name"
+                    >Humano Film Festival</a
+                  >
+                  @ Tijuana, Mexico,
+                  <a
+                    href="http://www.gallerialaveronica.it/artists/adelita-husni-bey/"
+                    class="name"
+                    >Adelita Husni-Bey</a
+                  >’s
+                  <a
+                    class="name"
+                    href="https://www.newmuseum.org/exhibitions/view/adelita-husni-bey-chiron"
+                    ><em>Chiron</em></a
+                  >
+                  and the border photojournalism of
+                  <a class="name" href="https://www.tishlampert.org/"
+                    >Tish Lampert</a
+                  >, presented by the artists with poet
+                  <a class="name" href="https://www.sibanisen.com/"
+                    >Sibani Sen</a
+                  >
+                  and
+                  <a
+                    class="name"
+                    href="http://www.anirfoundation.org/Adrienne_Belafonte_Biesemeyer.html"
+                    >Adrienne Belafonte Biesemeyer</a
+                  >.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="hero hero--bottom hero--diagonal">
-          <div id="bottom-banner" class="hero__image-container">
-            <img src="img/group2/reduced/sisters-sm.jpg" />
-          </div>
-        </div>
 
-        <div class="support-us-box">
-          <h2 class="font--display">Movement Without Borders</h2>
-          <p>
-            Please donate now to support this unique day of performance. Your
-            contribution is fully tax deductible and appreciated.
-          </p>
-          <a
-            class="support-us-box__link"
-            href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
-            >Support Us</a
+          <div
+            aria-hidden="true"
+            class="wave-bottom"
+            style="
+              height: 150px;
+              overflow: hidden;
+              position: absolute;
+              left: 0;
+              width: 100vw;
+            "
           >
-          <div class="support-us-box__divider"></div>
-          <p style="text-align: left">
-            You can also donate by personal check. Please make checks payable to
-            Judson Memorial Church and write Movement Without Borders in the
-            memo. Send checks to:<br />
-          </p>
-          <p>
-            Judson Memorial Church<br />
-            239 Thompson Street<br />
-            New York, NY 10012
-          </p>
-        </div>
-
-        <div class="footer">
-          <p>
-            <em
-              >Movement Without Borders has received, gratefully, lead support
-              from the
-              <a href="https://www.ddcf.org/what-we-fund/building-bridges/"
-                >Doris Duke Foundation for Islamic Art: Building Bridges
-                Program</a
-              >
-              and the
-              <a href="https://www.ddcf.org/"
-                >Doris Duke Charitable Foundation</a
-              ></em
+            <svg
+              class="wave1"
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              style="height: 100%; width: 100vw; position: absolute; top: 0"
             >
-          </p>
+              <path
+                d="M0.00,49.98 C105.24,160.35 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="fill: #89cbbc61"
+              ></path>
+            </svg>
+            <svg
+              class="wave2"
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              style="height: 100%; width: 100vw; position: absolute; top: 55px"
+            >
+              <path
+                d="M0.00,49.98 C126.97,113.97 405.75,-35.03 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="fill: #89cbbc61"
+              ></path>
+            </svg>
+            <svg
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              style="height: 100%; width: 100vw; position: absolute; top: 80px"
+            >
+              <path
+                d="M0.00,49.98 C123.02,100.15 450.90,-34.05 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="fill: #fff"
+              ></path>
+            </svg>
+          </div>
 
-          <div class="page-attribution">
-            <strong class="attribution attribution--inline">
-              <span>Website Credits: </span>
-            </strong>
-            <span class="attribution attribution--inline">
-              <em>Lucy's Daughters</em> (1990), Kiki Smith;
-            </span>
-            <span class="attribution attribution--inline">
-              <em>On Sculpture #2</em> (2011), Xaviera Simmons;
-            </span>
-            <span class="attribution attribution--inline">
-              <em>Convene</em> (2018), Xaviera Simmons;
-            </span>
-            <span class="attribution attribution--inline">
-              <em>The Migration Series</em> (1941), Jacob Lawrence;
-            </span>
-            <span class="attribution attribution--inline">
-              <em>Mexico-United States Border Photography</em> by Tish Lampert;
-            </span>
-            <span class="attribution attribution--inline">
-              Website by Elias Jarzombek.
-            </span>
+          <!-- <div>
+            <canvas id="myCanvas"></canvas>
+          </div> -->
+          <!-- <div class="hero hero--bottom">
+            <div id="bottom-banner" class="hero__image-container">
+              <img src="img/group2/reduced/sisters-sm.jpg" />
+            </div>
+          </div> -->
+
+          <!-- <div class="max-width-container"></div> -->
+
+          <div class="max-width-container bottom-container">
+            <div style="flex-basis: 40%">
+              <h2 class="page-title font--display">Movement Without Borders</h2>
+              <p style="font-size: 1.2em">
+                Please donate now to support this unique day of performance.
+                Your contribution is fully tax deductible and appreciated.
+              </p>
+              <a
+                class="support-us-button"
+                href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
+                >Support Us
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="55px"
+                  height="40px"
+                  viewBox="0 0 100 100"
+                  enable-background="new 0 0 100 100"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                    />
+                  </g></svg
+              ></a>
+              <!-- <div class="support-us-box__divider"></div> -->
+            </div>
+
+            <div id="slideshow" class="slideshow">
+              <img
+                class="slideshow__image active"
+                alt="Salut, Tijuana -- photograph by Tish Lampert"
+                src="img/group2/reduced/salut-Tijuana.jpg"
+              />
+              <img
+                class="slideshow__image"
+                src="img/poster/2.png"
+                alt="The Expression Of The Soul by Wladimiro Politano"
+              />
+              <img
+                class="slideshow__image"
+                src="img/group3/tish-lampert-sunset-in-tijuana.jpg"
+                alt="Photograph by Tish Lampert depicting a sunset at the beach in Tijuana. Several people are walking along the water"
+              />
+              <img
+                class="slideshow__image"
+                src="img/xaviera-simmons-convene.jpg"
+                alt="Photo of 'Convene' by Xaviera Simmons -- colorfully painted canoes lying along the East River in NYC"
+              />
+              <img
+                class="slideshow__image"
+                src="img/578866.story_x_large.jpg"
+                alt="Photograph by Tish Lampert showing someone cupping a butterfly in their hands"
+              />
+              <img
+                class="slideshow__image"
+                src="img/poster/6.png"
+                alt="The Expression Of The Soul -- artwork by Wladimiro Politano depicting a heavily stylized and abstract face painted in bright colors"
+              />
+              <img
+                class="slideshow__image"
+                src="img/jacob-lawrence-migration-series-2.jpg"
+                alt="Migration Series by Jacob Lawrence depicting a group of people traveling with bird flying overhead"
+              />
+              <img
+                class="slideshow__image"
+                src="img/Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg"
+                alt="A POV photo of two hands holding a torn picture of people jumping off of a boat"
+              />
+              <img
+                class="slideshow__image"
+                src="img/group2/reduced/The-School-Box-project-.jpg"
+                alt="Photograph by Tish Lampert showing children taking a class in a makeshift classroom"
+              />
+              <img
+                class="slideshow__image"
+                src="img/group2/reduced/waters-edge-Tijuana2.jpg"
+                alt="Photograph by Tish Lampert showing 5 silhouetted figures walking along the beach at sunset"
+              />
+              <img
+                class="slideshow__image"
+                src="img/group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg"
+                alt="Photograph by Tish Lampert showing two Nuns standing on the beach"
+              />
+            </div>
+
+            <!-- <div class="image-bottom">
+              <img
+                alt="Salut, Tijuana -- photograph by Tish Lampert"
+                src="img/group2/reduced/salut-Tijuana.jpg"
+                style="width: 100%"
+              />
+              <div
+                class="attribution attribution--right"
+                style="padding-right: 0"
+              >
+                Salut, Tijuana (February 2020)<br />
+                Photo by Tish Lampert<br />
+              </div>
+            </div> -->
+          </div>
+
+          <div class="max-width-container" style="padding: 0 2em">
+            <div class="donate-by-check">
+              <p>
+                You may also donate by personal check. Please make checks
+                payable to <strong>Judson Memorial Church</strong> and write
+                <strong>Movement Without Borders</strong> in the memo, and send
+                to:<br />
+              </p>
+              <p>
+                Judson Memorial Church<br />
+                239 Thompson Street<br />
+                New York, NY 10012
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="background: #f3f3f3; margin-top: 100px; position: relative"
+          >
+            <div
+              aria-hidden="true"
+              class="wave-bottom"
+              style="
+                height: 100px;
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                width: 100vw;
+                top: -100px;
+              "
+            >
+              <svg
+                class="wave1"
+                viewBox="0 0 500 150"
+                preserveAspectRatio="none"
+                style="height: 100%; width: 100vw; position: absolute; top: 0"
+              >
+                <path
+                  d="M0.00,49.98 C105.24,160.35 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                  style="fill: #f3f3f3"
+                ></path>
+              </svg>
+            </div>
+            <div class="footer max-width-container">
+              <p>
+                <em
+                  >Movement Without Borders has received, gratefully, lead
+                  support from the
+                  <a href="https://www.ddcf.org/funding-areas/building-bridges/"
+                    >Doris Duke Foundation for Islamic Art: Building Bridges
+                    Program</a
+                  >
+                  and the
+                  <a href="https://www.ddcf.org/"
+                    >Doris Duke Charitable Foundation</a
+                  ></em
+                >
+              </p>
+
+              <div class="page-attribution">
+                <span class="attribution attribution--inline">
+                  <strong>Background image: </strong>
+                  <em>Lucy's Daughters</em> (1990), Kiki Smith;
+                </span>
+                <span class="attribution attribution--inline">
+                  <strong>Slideshow images: </strong>
+                  <em>On Sculpture #2</em> (2011), Xaviera Simmons;
+                </span>
+                <span class="attribution attribution--inline">
+                  <em>Convene</em> (2018), Xaviera Simmons;
+                </span>
+                <span class="attribution attribution--inline">
+                  <em>The Migration Series</em> (1941), Jacob Lawrence;
+                </span>
+                <span class="attribution attribution--inline">
+                  <em>Mexico-United States Border Photography</em> by Tish
+                  Lampert;
+                </span>
+                <span class="attribution attribution--inline">
+                  <em>The Expression Of The Soul</em> by Wladimiro Politano;
+                </span>
+                <span class="attribution attribution--inline">
+                  <strong>Poster design</strong> by Beatriz Carreño;
+                </span>
+                <span class="attribution attribution--inline">
+                  <strong>Website</strong> by Elias Jarzombek.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script src="js/blur.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor/gl-slideshow.js"></script>
+    <!-- <script src="js/blur.js"></script> -->
+    <script src="js/main2.js"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-69348531-9"
