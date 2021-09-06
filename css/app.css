@@ -58,7 +58,12 @@ body {
   background: #fdf8f2;
   font-weight: 100;
 }
-
+.text--small {
+  font-size: 0.8em;
+}
+.text--small .name {
+  font-size: 1em;
+}
 .main {
   z-index: 4;
   padding-top: 3em;
