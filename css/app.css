@@ -855,15 +855,16 @@ strong.attribution {
   transform: scale3d(1, 1, 1);
   transition: all 0.2s;
   box-shadow: none;
-  /* border: 2px solid #f3e847; */
-  /* background: none; */
+  border: 2px solid #f3e847;
+  background: none;
   /* box-shadow: 0 0 30px -10px #f3e847; */
   /* border-bottom: 10px solid #f3e847; */
 }
 
 .register-button {
-  box-shadow: -2px 2px #e4d723;
+  /* box-shadow: -2px 2px #e4d723; */
   background: #f3e847;
+  margin-right: 1em;
 }
 
 .support-us-button svg {
