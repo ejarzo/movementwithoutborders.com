@@ -59,10 +59,11 @@ body {
   font-weight: 100;
 }
 .text--small {
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
 }
 .text--small .name {
   font-size: 1em;
+  font-weight: 200;
 }
 .main {
   z-index: 4;
@@ -837,7 +838,7 @@ strong.attribution {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  width: 190px;
 
   font-weight: 200;
   text-transform: uppercase;
@@ -854,9 +855,15 @@ strong.attribution {
   transform: scale3d(1, 1, 1);
   transition: all 0.2s;
   box-shadow: none;
-
+  /* border: 2px solid #f3e847; */
+  /* background: none; */
   /* box-shadow: 0 0 30px -10px #f3e847; */
   /* border-bottom: 10px solid #f3e847; */
+}
+
+.register-button {
+  box-shadow: -2px 2px #e4d723;
+  background: #f3e847;
 }
 
 .support-us-button svg {
@@ -866,10 +873,13 @@ strong.attribution {
   transition: all 0.2s;
   fill: currentColor;
 }
-.support-us-button:hover {
+
+.register-button:hover {
   /* transform: scale3d(1.05, 1.05, 1); */
-  background: #e2d843;
+  background: #fff672;
+  /* border-color: #fff672; */
 }
+
 .support-us-button:hover svg {
   left: 0.3em;
 }
@@ -914,6 +924,10 @@ strong.attribution {
   position: relative;
 }
 
+/* .sections p {
+  line-height: 1.5;
+} */
+
 .background-image {
   overflow: hidden;
   height: calc(100% + 450px);
@@ -952,7 +966,7 @@ img {
 }
 .dashed-box {
   border: 2px dashed #d3e4debd;
-  padding: 1em;
+  padding: 0.5em 1.5em;
   border-radius: 3px;
 }
 .donate-by-check {
