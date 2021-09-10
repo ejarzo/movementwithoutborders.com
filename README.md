@@ -8,5 +8,4 @@ _A Day of Performance To Benefit New Sanctuary Coalition, New York Immigration C
 - Judson Memorial Church
 - 55 Washington Square South, New York, NY
 
-The event is free and open to the public. Lunch served!
-Suggested admission $20 at door
+The event is free and open to the public -- Suggested admission $20 at door
