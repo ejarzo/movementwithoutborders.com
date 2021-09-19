@@ -672,6 +672,10 @@ strong.attribution {
   /* padding: 25px; */
 }
 
+.section em {
+  font-weight: 200;
+}
+
 .section h2 {
   display: inline-block;
   flex-basis: 150px;
