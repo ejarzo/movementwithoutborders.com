@@ -909,6 +909,7 @@ strong.attribution {
 }
 
 .footer a {
+  line-height: 1.2;
   display: inline-block;
 }
 
