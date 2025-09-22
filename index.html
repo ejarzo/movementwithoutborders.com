@@ -12,40 +12,100 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/landing.css" />
     <base target="_blank" />
     <meta name="theme-color" content="#FFE9CB" />
   </head>
 
   <body>
-    <div style="background-color: white">
-      <div class="main">
-        <div class="max-width-container hero--top">
-          <div class="hero-image-container">
-            <div class="hero-image-wrapper">
-              <img
-                class="hero__image"
-                src="img/poster/expressions-of-the-soul.jpg"
-                alt="The Expression Of The Soul XLIX -- artwork by Wladimiro Politano"
-              />
-            </div>
-            <div
-              class="attribution attribution--right"
-              style="padding-right: 0"
+    <!-- Navigation Header -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div>
+          <div class="nav-logo">
+            <a href="#home">Movement<br />Without<br />Borders</a>
+          </div>
+        </div>
+        <div style="flex: 1"></div>
+
+        <ul class="nav-links">
+          <li><a href="#featured-project">Projects</a></li>
+          <li><a href="#community-partners">Community Partners</a></li>
+          <li><a href="#supporters">Supporters</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a
+            class="register-button support-us-button font-size-small"
+            style="height: 40px; padding: 0.3em 0.6em; width: 160px"
+            href="https://app.thefield.org/profile/Movement-Without-Borders/655104"
+            >Donate
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="40px"
+              height="30px"
+              viewBox="0 0 100 100"
+              enable-background="new 0 0 100 100"
+              xml:space="preserve"
             >
-              The Expression Of The Soul XLIX (2010)
-              <br />
-              Wladimiro Politano<br />
+              <g>
+                <path
+                  d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div style="background-color: white">
+      <div class="main" style="padding-top: 12em">
+        <div id="home" class="max-width-container hero--top">
+          <div class="hero-image-container">
+            <div
+              style="
+                width: 100%;
+                aspect-ratio: 1;
+                background-color: #f0f0f0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+              "
+            >
+              <span style="color: #999; font-size: 14px">logo</span>
             </div>
           </div>
           <div class="hero__text">
             <div>
-              <h3>Judson Memorial Church and S/C Projects present</h3>
+              <!-- <h3>Judson Memorial Church and S/C Projects present</h3> -->
               <h1 class="page-title font--display">
                 Movement<br />Without<br />Borders
               </h1>
             </div>
-
             <div>
+              <p style="padding-top: 1em">
+                Founded by dancemaker and curator Richard Colton, Movement
+                Without Borders (MWB) brings together acclaimed artists,
+                community organizations, advocates, scholars, and audiences
+                around urgent social issues.
+              </p>
+              <p>
+                Through bold interdisciplinary projects, MWB fosters deep human
+                connection, inspires empathy, and motivates meaningful change.
+                MWB envisions a world in which justice and equity are shared
+                societal values that require ongoing collective action.
+                Together, through artistic inquiry and activism, MWB explores
+                the root causes of social injustice and inspires compassionate
+                and innovative solutions.
+              </p>
+            </div>
+            <!-- <div>
               <p class="info">
                 <span class="justify info__date">OCTOBER 2, 2021</span><br />
                 <span class="justify info__time">11AM TO 6:30PM</span>
@@ -64,46 +124,25 @@
                 >
                 <br />
               </p>
-            </div>
+            </div> -->
 
             <!-- <div>
               55 Washington Square South<br />
               New York, NY 10012
             </div> -->
 
-            <h2 class="subtitle font-size-medium">
+            <!-- <h2 class="subtitle font-size-medium">
               A day of performance to celebrate
               <a href="https://www.nyic.org/">New York Immigration Coalition</a
               >, <a href="https://www.unlocal.org/">UnLocal</a>, and
               <a href="https://www.genteunidasd.net/">Gente Unida</a>
-            </h2>
+            </h2> -->
 
             <div>
               <div style="display: flex; justify-content: space-between">
                 <a
                   class="register-button support-us-button font-size-medium"
-                  href="https://www.eventbrite.com/e/movement-without-borders-tickets-169389573775"
-                  >Register
-                  <svg
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    version="1.1"
-                    width="55px"
-                    height="40px"
-                    viewBox="0 0 100 100"
-                    enable-background="new 0 0 100 100"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
-                      />
-                    </g></svg
-                ></a>
-                <!-- <a
-                  class="support-us-button font-size-medium"
-                  href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
+                  href="https://app.thefield.org/profile/Movement-Without-Borders/655104"
                   >Donate
                   <svg
                     aria-hidden="true"
@@ -120,10 +159,11 @@
                       <path
                         d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
                       />
-                    </g></svg
-                ></a> -->
+                    </g>
+                  </svg>
+                </a>
               </div>
-              <div class="dashed-box" style="margin-top: 0; line-height: 1.4">
+              <!-- <div class="dashed-box" style="margin-top: 0; line-height: 1.4">
                 <p>
                   The event is free and open to the public with a suggested
                   donation of $20
@@ -136,491 +176,189 @@
                   >
                   online
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
 
-        <div
-          aria-hidden="true"
-          style="
-            height: 150px;
-            overflow: hidden;
-            position: absolute;
-            left: 0;
-            width: 100vw;
-            margin-top: 3em;
-          "
-        >
-          <svg
-            class="wave1"
-            viewBox="0 0 500 150"
-            preserveAspectRatio="none"
-            style="height: 100%; width: 100vw; position: absolute; top: 0"
-          >
-            <path
-              d="M0.00,49.98 C105.24,160.35 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-              style="fill: #89cbbc61"
-            ></path>
-          </svg>
-          <svg
-            class="wave2"
-            viewBox="0 0 500 150"
-            preserveAspectRatio="none"
-            style="height: 100%; width: 100vw; position: absolute; top: 55px"
-          >
-            <path
-              d="M0.00,49.98 C126.97,113.97 405.75,-35.03 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-              style="fill: #89cbbc61"
-            ></path>
-          </svg>
-          <svg
-            viewBox="0 0 500 150"
-            preserveAspectRatio="none"
-            style="height: 100%; width: 100vw; position: absolute; top: 80px"
-          >
-            <path
-              d="M0.00,49.98 C123.02,100.15 450.90,-34.05 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-              style="fill: #fff"
-            ></path>
-          </svg>
-        </div>
-
-        <div class="quote">
-          <span class="quote__text font--display">
-            <span
-              >&ldquo;Because of the transient nature of human life, migration
-              is the starting point for everybody.&rdquo;</span
-            >
-          </span>
-          <div class="quote__author font-size-medium">Mohsin Hamid</div>
-        </div>
-
-        <div class="max-width-container">
-          <div class="hero--intro">
-            <!-- <div id="intro-banner" class="hero__image-container">
-              <img src="img/unnamed-1-reduced2.jpg" />
-            </div> -->
-            <div class="hero--intro__image">
-              <img
-                alt="Photograph depicting two women embracing. The older woman on the left holds the younger woman's face in her hands"
-                style="width: 100%; border-radius: 3px"
-                src="img/group2/reduced/sisters-sm.jpg"
-              />
-              <div
-                class="attribution attribution--right show-for-large"
-                style="padding-right: 0"
-              >
-                My Sister - Door of Hope (November 2017)<br />
-                Photo by Tish Lampert<br />
-              </div>
-            </div>
-            <div class="attribution attribution--right show-for-mobile">
-              My Sister - Door of Hope (November 2017)<br />
-              Photo by Tish Lampert<br />
-            </div>
-
-            <div>
-              <div class="hero--intro__title">
-                <h2 class="font--display">
-                  A Day of Performance that Surpasses Boundary
-                </h2>
-              </div>
-
-              <div class="hero--intro__text">
-                <div class="font-size-medium">
-                  <p style="margin-top: 0">
-                    Please join us in celebrating migration as integral to the
-                    DNA of America, in a day that has humanity at its core:
-                    migration as the movement that is human life, the reality of
-                    ourselves, a shaper of evolution.
-                  </p>
-                  <p>
-                    On <strong>Saturday, October 2, 2021</strong>, dancers,
-                    musicians, filmmakers, poets and immigration advocates will
-                    gather in community around the urgent issue of humanizing
-                    our immigration system. We ask the question what it means to
-                    engage ethically with another person’s history, and how that
-                    might transform us individually and as a society.
-                  </p>
-                  <p>
-                    Conceived, directed and produced by dance maker
-                    <a
-                      href="https://architecture.mit.edu/architecture-and-urbanism/lecture/performance-after-georges-perec%E2%80%99s-species-spaces"
-                      >Richard Colton</a
-                    >, in collaboration with
-                    <a href="https://www.judson.org/">Judson Memorial Church</a
-                    >, the event celebrates
-                    <a href="https://www.nyic.org/"
-                      >New York Immigration Coalition</a
-                    >, <a href="https://www.unlocal.org/">UnLocal</a>, and
-                    <a href="https://www.genteunidasd.net/">Gente Unida</a>,
-                    three dynamic New York and San Diego-based organizations
-                    that create support systems for those navigating the
-                    immigration system.
-                  </p>
-                </div>
-                <div style="display: flex">
-                  <a
-                    class="register-button support-us-button"
-                    href="https://www.eventbrite.com/e/movement-without-borders-tickets-169389573775"
-                    >Register
-                    <svg
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                      width="55px"
-                      height="40px"
-                      viewBox="0 0 100 100"
-                      enable-background="new 0 0 100 100"
-                      xml:space="preserve"
-                    >
-                      <g>
-                        <path
-                          d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
-                        />
-                      </g></svg
-                  ></a>
-
-                  <a
-                    class="support-us-button"
-                    href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
-                    >Support Us
-                    <svg
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                      width="55px"
-                      height="40px"
-                      viewBox="0 0 100 100"
-                      enable-background="new 0 0 100 100"
-                      xml:space="preserve"
-                    >
-                      <g>
-                        <path
-                          d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
-                        />
-                      </g></svg
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="position: relative">
-          <!-- <div
-            class="max-width-container"
-            style="margin-top: 4em; padding: 0 2em"
+        <div style="padding-top: 4em">
+          <div
+            id="slideshow"
+            class="slideshow"
+            style="max-width: 1000px; height: 600px; margin: 0 auto"
           >
             <img
-              alt="Salut, Tijuana -- photograph by Tish Lampert"
-              src="img/group2/reduced/salut-Tijuana.jpg"
-              style="width: 100%"
+              class="slideshow__image"
+              src="img/etudes/etudesgrid1.jpg"
+              alt="Etudes 1 grid"
             />
-            <div
-              class="attribution attribution--right"
-              style="padding-right: 0"
-            >
-              Salut, Tijuana (February 2020)<br />
-              Photo by Tish Lampert<br />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudes1.jpg"
+              alt="Etudes 1"
+            />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudes11.png"
+              alt="Etudes 2"
+            />
+            <!-- <img
+              class="slideshow__image"
+              src="img/etudes/etudes2.jpg"
+              alt="Etudes 2"
+            /> -->
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudes8.png"
+              alt="Etudes 4"
+            />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudes9.jpg"
+              alt="Etudes 5"
+            />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudes6.jpg"
+              alt="Etudes 6"
+            />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudesgrid3.jpg"
+              alt="Etudes 3 grid"
+            />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudes9.png"
+              alt="Etudes 3 grid"
+            />
+            <img
+              class="slideshow__image"
+              src="img/etudes/etudesgrid6.jpg"
+              alt="Etudes 6 grid"
+            />
+          </div>
+        </div>
+        <div>
+          <div id="featured-project" class="hero--intro max-width-content">
+            <div style="margin-top: 4em">
+              <p style="font-size: 0.8em; opacity: 0.8">FEATURED PROJECT</p>
+              <h2 class="font--display" style="min-width: 50%; width: 50%">
+                Etudes for Rough Sleepers (Fall 2026)
+              </h2>
+              <p style="margin-top: 0; max-width: 50%" class="v2-subtitle">
+                An immersive, interdisciplinary performance exploring the crisis
+                of homelessness in America.
+              </p>
             </div>
-          </div> -->
-          <!-- <div class="video-grid">
-            <div class="video-grid-container">
-              <div class="video-grid-row">
-                <div class="video-grid-cell">
-                  <video autoplay playsinline loop muted>
-                    <source type="video/mp4" src="video/group2/flowers.mp4" />
-                  </video>
-                </div>
-                <div class="video-grid-cell">
-                  <video autoplay playsinline loop muted>
-                    <source type="video/mp4" src="video/group2/waves.mp4" />
-                  </video>
-                </div>
-                <div class="video-grid-cell">
-                  <video autoplay playsinline loop muted>
-                    <source type="video/mp4" src="video/group2/tallgrass.mp4" />
-                  </video>
-                </div>
-              </div>
-              <div class="video-grid-row">
-                <div class="video-grid-cell">
-                  <video autoplay playsinline loop muted>
-                    <source type="video/mp4" src="video/group2/trees.mp4" />
-                  </video>
-                </div>
-                <div class="video-grid-cell">
-                  <video autoplay playsinline loop muted>
-                    <source type="video/mp4" src="video/group2/grass.mp4" />
-                  </video>
-                </div>
+          </div>
 
-                <div class="video-grid-cell">
-                  <video autoplay playsinline loop muted>
-                    <source type="video/mp4" src="video/group2/sand.mp4" />
-                  </video>
-                </div>
-              </div>
-              <div class="attribution attribution--right">
-                Untitled (Sketches 2020)<br />
-                Digital Videos<br />
-                Xaviera Simmons Studio<br />
-              </div>
-            </div>
-          </div> -->
-          <div class="sections">
-            <div class="background-image">
-              <img
-                alt="Background image: Lucy's Daughters by Kiki Smith"
-                class="unnamed"
-                src="img/unnamed-2.svg"
-              />
-            </div>
-            <div id="speakers" class="section">
-              <div class="max-width-container">
-                <div><h2 class="font--display">Speakers</h2></div>
+          <div>
+            <!-- Etudes for Rough Sleepers -->
+            <div style="padding: 0 1em" class="font-size-medium">
+              <div class="max-width-content">
                 <p>
-                  Poet
+                  Conceived and directed by
+                  <a href="https://www.davidmichalekstudio.com/"
+                    >David Michalek</a
+                  >, with original music by
+                  <a href="https://tedhearne.com/"> Ted Hearne</a> and movement
+                  by
+                  <a href="https://www.hbartscollective.org/">Hope Boykin</a>,
+                  <strong>Etudes for Rough Sleepers</strong>, creatively
+                  produced by
                   <a
-                    href="https://www.poetryfoundation.org/poets/claudia-rankine"
-                    class="name"
-                    >Claudia Rankine</a
-                  >
-                  and
-                  <a href="https://theracialimaginary.org/" class="name"
-                    >The Racial Imaginary Institute</a
-                  >
-                  with visual artist
-                  <a
-                    href="https://davidcastillogallery.com/artists/xaviera-simmons/"
-                    class="name"
-                    >Xaviera Simmons</a
-                  >; writer
-                  <a
-                    href="https://www.penguinrandomhouse.com/authors/59367/margo-jefferson/"
-                    class="name"
-                    >Margo Jefferson</a
-                  >;
-                  <a
-                    href="https://www.genteunidasd.net/enrique-morones-2/"
-                    class="name"
-                    >Enrique Morones</a
-                  >, Founder/Director of Gente Unida and Founder/Former Director
-                  of Border Angels;
-                  <a
-                    href="https://www.womensmediacenter.com/shesource/expert/anu-joshi"
-                    class="name"
-                    >Anu Joshi</a
-                  >
-                  of New York Immigration Coalition and
-                  <a
-                    href="https://www.unlocal.org/staff-and-board-of-directors-en/"
-                    class="name"
-                    >Christhian Diaz</a
-                  >
-                  UnLocal;
-                  <a href="/roger-brown.html" class="name">Roger H. Brown,</a>
-                  President of Berklee College of Music,
-                  <strong class="name">Shagufa Habibi</strong>, girls sport and
-                  education advocate;
-                  <a href="http://classic.judson.org/MicahBucey" class="name"
-                    >Reverend Micah Bucey</a
-                  >
-                  of Judson Memorial Church, music producer/activist
-                  <a href="https://www.imdb.com/name/nm0730056/bio" class="name"
-                    >Raoul Roach</a
-                  >, and
-                  <a
-                    href="https://www.sankofa.org/whoweare//gina-belafonte-executive-director"
-                    class="name"
-                    >Gina Belafonte</a
-                  >, Executive Director, Sankofa.
+                    href="https://www.linkedin.com/in/richard-colton-8a267512a/"
+                    >Richard Colton</a
+                  >, brings together professional artists with individuals who
+                  have recently experienced homelessness. Together, they create
+                  a transformative work that deepens understanding, cultivates
+                  empathy, and inspires action.
                 </p>
               </div>
-            </div>
 
-            <div id="music" class="section">
-              <div class="max-width-container">
-                <div><h2 class="font--display">Music</h2></div>
+              <div
+                style="width: 100%; margin: 2em auto 3em"
+                class="max-width-container"
+              >
+                <img
+                  src="img/etudes/etudes-creative-team collage.png"
+                  alt="Etudes for Rough Sleepers creative team collage "
+                  style="width: 100%"
+                />
+                <div
+                  class="attribution attribution--center"
+                  style="padding-right: 0; max-width: 50ch"
+                >
+                  Etudes for Rough Sleepers creative team. Clockwise from top
+                  right: David Michalek, Hope Boykin, Ted Hearne. Center:
+                  Richard Colton
+                </div>
+              </div>
+              <div class="max-width-content">
                 <p>
-                  Special guests,
-                  <a class="name" href="https://www.antoniosanchez.net"
-                    >Antonio Sanchez Band</a
+                  Drawing inspiration, in part, from
+                  <a
+                    href="https://www.nytimes.com/2023/01/16/books/review/rough-sleepers-tracy-kidder.html"
+                    >Rough Sleepers: Dr. Jim O’Connell’s Urgent Mission to Bring
+                    Healing to Homeless People</a
                   >
+                  by Pulitzer Prize-winning writer
+                  <strong>Tracy Kidder</strong>, Etudes for Rough Sleepers will
+                  premiere at
+                  <a href="https://www.judson.org/">Judson Memorial Church</a>
+                  in New York City before touring nationally. Advisors Tracy
+                  Kidder and Dr. Jim O’Connell will contribute their expertise
+                  to the project.
+                </p>
 
-                  <span class="text--small">
-                    with
-                    <a class="name" href="https://www.thanalexa.com/"
-                      >Thana Alexa</a
-                    >,
-                    <a class="name" href="http://www.jordanpetersmusic.com"
-                      >Jordan Peters</a
-                    >,
-                    <a class="name" href="https://www.carmenstaaf.com"
-                      >Carmen Staaf</a
-                    >,
-                    <a class="name" href="https://www.noamwiesenberg.com/"
-                      >Noam Wiesenberg</a
-                    >
-                    and poet
-                    <a class="name" href="http://mendozapoetry.com/"
-                      >Jonathan Mendoza</a
+                <div class="quote" style="margin: 3em auto; padding: 0 3em">
+                  <span class="quote__text" style="font-size: 1.2em">
+                    <span
+                      >&ldquo;Bedding down outside, they die at 10 times the
+                      rate as housed Bostonians. They die of overdoses, of being
+                      set on fire, of being beaten to death, of suicide, of
+                      falling asleep in the snow and never waking
+                      up.&rdquo;</span
                     >
                   </span>
-                  performing from drummer/composer Sanchez's 2019 album
-                  <em>Lines in the Sand</em>, the brilliant music protest
-                  against injustice in our current political climate and a
-                  tribute to every immigrant’s journey.
-                </p>
-              </div>
-            </div>
-
-            <div id="dance" class="section">
-              <div class="max-width-container">
-                <div><h2 class="font--display">Dance</h2></div>
+                  <div class="quote__author font-size-medium">
+                    Tracy Kidder, Rough Sleepers
+                  </div>
+                </div>
                 <p>
-                  Performances by dancer/choreographers
-                  <a
-                    class="name"
-                    href="http://petron.io/portfolio/ernesto-breton/"
-                    >Ernesto Breton</a
-                  >/<a
-                    class="name"
-                    href="https://www.kcet.org/shows/artbound/from-the-bronx-to-los-angeles-the-legacy-of-rudy-perez"
-                    >Rudy Perez</a
-                  >,
-                  <a
-                    class="name"
-                    href="https://www.physicalmomentumproject.com/francisco-cordova"
-                    >Francisco Cordova</a
-                  >,
-                  <a
-                    class="name"
-                    href="https://www.scenariopubblico.com/en/profili/edivaldo-ernesto/"
-                    >Edivaldo Ernesto</a
-                  >,
-                  <a class="name" href="http://thefrancescaharperproject.org/"
-                    >Francesca Harper</a
-                  >,
-                  <a
-                    class="name"
-                    href="http://www.horaciomacuacua.com/home/biography/"
-                    >Horacio Macuacua</a
-                  >, <a class="name" href="/jimena-paz.html">Jimena Paz</a>,
-                  <a
-                    style="display: inline-block; line-height: 1.2"
-                    class="name"
-                    href="https://shamelpitts.com/"
-                    >Shamel Pitts | TRIBE </a
-                  >,
-                  <a
-                    class="name"
-                    href="http://www.marianavalencia.work/choreography/"
-                    >Mariana Valencia</a
-                  >, and multidisciplinary artist
-                  <a
-                    class="name"
-                    href="https://fishercenter.bard.edu/events/naturalized-borders/"
-                    >Emilio Rojas</a
-                  >
-                  with dancers
-                  <a
-                    class="name"
-                    href="https://en.wikipedia.org/wiki/Arthur_Aviles"
-                    >Arthur Avilés</a
-                  >,
-                  <a
-                    class="name"
-                    href="https://movementresearch.org/people/jonathan-gonzalez"
-                    >Jonathan Gonzáles</a
-                  >,
-                  <a
-                    class="name"
-                    href="https://movementresearch.org/people/maximillion-hawkeye-canion"
-                    >Maxi Kawkeye Canion</a
-                  >, and
-                  <a class="name" href="https://www.mioishikawa.com/about"
-                    >Mio Ishikawa</a
-                  >.
+                  What makes Etudes for Rough Sleepers a uniquely Movement
+                  Without Borders production is its unflinching commitment to
+                  honoring the humanity of those too often pushed to society’s
+                  margins. Professional dancers and musicians stand shoulder to
+                  shoulder with participant — performers who have experienced
+                  homelessness, each one valued — and compensated — for their
+                  artistry and their story.
                 </p>
-              </div>
-            </div>
-
-            <div id="film" class="section">
-              <div class="max-width-container">
-                <div><h2 class="font--display">Film</h2></div>
                 <p>
-                  <a
-                    href="http://www.gallerialaveronica.it/artists/adelita-husni-bey/"
-                    class="name"
-                    >Adelita Husni-Bey</a
-                  >’s
-                  <a
-                    class="name"
-                    href="https://www.newmuseum.org/exhibitions/view/adelita-husni-bey-chiron"
-                    ><em>Chiron</em></a
-                  >
-                  introduced by Husni-Bey, photojournalist
-                  <a class="name" href="https://www.tishlampert.org/"
-                    >Tish Lampert</a
-                  >'s documentary project <em>The Path To Freedom</em> edited by
-                  <a class="name" href="https://www.imdb.com/name/nm0167917/"
-                    >James Coblentz</a
-                  >; and a new film collaboration, <em>Ghost Presences</em>,
-                  created by
-                  <a
-                    class="name"
-                    href="https://fishercenter.bard.edu/events/naturalized-borders/"
-                    >Emilio Rojas</a
-                  >
-                  and poet
-                  <a class="name" href="https://www.sibanisen.com/"
-                    >Sibani Sen</a
-                  >, edited by
-                  <a class="name" href="/jack-colton.html">Jack Colton</a>
-                  based on Lampert’s border landscape photography.
+                  Over fifteen transformative weeks, the performance ensemble
+                  gathers in movement, vocal and storytelling workshops that
+                  rebuild trust in self and others, reclaiming space for
+                  creative expression, confidence and joy. Audiences are not
+                  distant spectators; they are drawn into an intimate, urgent
+                  encounter with lives and voices that demand to be seen and
+                  heard. Each performance ends around a shared meal and
+                  dialogue. The experience encourages us collectively on a path
+                  where art becomes action
                 </p>
               </div>
             </div>
           </div>
 
-          <div
-            class="max-width-container"
-            style="text-align: center; margin: 2em auto; padding: 0 2em"
-          >
-            <p style="margin-bottom: 3em">
-              <a class="name" href="http://www.audiochef.net/about-us/"
-                >Paul Acosta</a
-              >, Production Manager for Movement Without Borders
-            </p>
-            <p>
-              <em>Program subject to change</em>
-            </p>
-            <p>
-              <em>
-                Health and Safety Protocols for this Event: In accordance with
-                the health and safety guidelines of local officials, proof of
-                vaccination will be required to attend this event. Valid proof
-                of vaccination can be provided via CDC vaccination card (either
-                physical or photo), Excelsior Pass, or NYC COVID Safe app. Masks
-                will be required inside the venue at all times. 
-              </em>
-            </p>
-          </div>
-
-          <div
+          <!-- <div
             aria-hidden="true"
-            class="wave-bottom"
             style="
               height: 150px;
               overflow: hidden;
               position: absolute;
               left: 0;
               width: 100vw;
+              margin-top: 3em;
             "
           >
             <svg
@@ -655,165 +393,313 @@
                 style="fill: #fff"
               ></path>
             </svg>
-          </div>
+          </div> -->
 
-          <div class="max-width-container bottom-container">
-            <div style="flex-basis: 40%">
-              <h2 class="page-title font--display">Movement Without Borders</h2>
-              <p style="font-size: 1.2em">
-                Please support this unique day of performance. Your contribution
-                is fully tax deductible and appreciated.
-              </p>
-              <a
-                class="register-button support-us-button"
-                style="margin-bottom: 1em"
-                href="https://www.eventbrite.com/e/movement-without-borders-tickets-169389573775"
-                >Register
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="55px"
-                  height="40px"
-                  viewBox="0 0 100 100"
-                  enable-background="new 0 0 100 100"
-                  xml:space="preserve"
-                >
-                  <g>
-                    <path
-                      d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
-                    />
-                  </g></svg
-              ></a>
-              <a
-                class="support-us-button"
-                style="margin-top: 0"
-                href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
-                >Support Us
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="55px"
-                  height="40px"
-                  viewBox="0 0 100 100"
-                  enable-background="new 0 0 100 100"
-                  xml:space="preserve"
-                >
-                  <g>
-                    <path
-                      d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
-                    />
-                  </g></svg
-              ></a>
-              <!-- <div class="support-us-box__divider"></div> -->
-            </div>
-
-            <div id="slideshow" class="slideshow">
-              <img
-                class="slideshow__image active"
-                alt="Salut, Tijuana -- photograph by Tish Lampert"
-                src="img/group2/reduced/salut-Tijuana.jpg"
-              />
-              <img
-                class="slideshow__image"
-                src="img/poster/2.png"
-                alt="The Expression Of The Soul by Wladimiro Politano"
-              />
-              <img
-                class="slideshow__image"
-                src="img/group3/tish-lampert-sunset-in-tijuana.jpg"
-                alt="Photograph by Tish Lampert depicting a sunset at the beach in Tijuana. Several people are walking along the water"
-              />
-              <img
-                class="slideshow__image"
-                src="img/xaviera-simmons-convene.jpg"
-                alt="Photo of 'Convene' by Xaviera Simmons -- colorfully painted canoes lying along the East River in NYC"
-              />
-              <img
-                class="slideshow__image"
-                src="img/578866.story_x_large.jpg"
-                alt="Photograph by Tish Lampert showing someone cupping a butterfly in their hands"
-              />
-              <img
-                class="slideshow__image"
-                src="img/poster/6.png"
-                alt="The Expression Of The Soul -- artwork by Wladimiro Politano depicting a heavily stylized and abstract face painted in bright colors"
-              />
-              <img
-                class="slideshow__image"
-                src="img/jacob-lawrence-migration-series-2.jpg"
-                alt="Migration Series by Jacob Lawrence depicting a group of people traveling with bird flying overhead"
-              />
-              <img
-                class="slideshow__image"
-                src="img/Xaviera-Simmons_On-Sculpture-2_living-with-water.jpg"
-                alt="A POV photo of two hands holding a torn picture of people jumping off of a boat"
-              />
-              <img
-                class="slideshow__image"
-                src="img/group2/reduced/The-School-Box-project-.jpg"
-                alt="Photograph by Tish Lampert showing children taking a class in a makeshift classroom"
-              />
-              <img
-                class="slideshow__image"
-                src="img/group2/reduced/waters-edge-Tijuana2.jpg"
-                alt="Photograph by Tish Lampert showing 5 silhouetted figures walking along the beach at sunset"
-              />
-              <img
-                class="slideshow__image"
-                src="img/group2/reduced/Nuns-working-to-help-migrants-on-waters-edge-in-thought-think-i-sent.jpg"
-                alt="Photograph by Tish Lampert showing two Nuns standing on the beach"
-              />
-            </div>
-          </div>
-
-          <div class="max-width-container" style="padding: 0 2em">
-            <div class="donate-by-check">
-              <p>
-                You may also donate by personal check. Please make checks
-                payable to <strong>Judson Memorial Church</strong> and write
-                <strong>Movement Without Borders</strong> in the memo, and send
-                to:<br />
-              </p>
-              <p>
-                Judson Memorial Church<br />
-                239 Thompson Street<br />
-                New York, NY 10012
-              </p>
-            </div>
-          </div>
-
+          <!-- past projects -->
           <div
-            style="background: #f3f3f3; margin-top: 100px; position: relative"
+            id="past-project"
+            class="max-width-container"
+            style="
+              margin-top: 8em;
+              background: #fff4d0;
+              padding: 3em 2em;
+              border-radius: 16px;
+              /* border: 2px solid #f3e847; */
+            "
           >
-            <div
-              aria-hidden="true"
-              class="wave-bottom"
-              style="
-                height: 100px;
-                overflow: hidden;
-                position: absolute;
-                left: 0;
-                width: 100vw;
-                top: -100px;
-              "
-            >
-              <svg
-                class="wave1"
-                viewBox="0 0 500 150"
-                preserveAspectRatio="none"
-                style="height: 100%; width: 100vw; position: absolute; top: 0"
-              >
-                <path
-                  d="M0.00,49.98 C105.24,160.35 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                  style="fill: #f3f3f3"
-                ></path>
-              </svg>
+            <div class="hero--intro">
+              <!-- <div id="intro-banner" class="hero__image-container">
+                <img src="img/unnamed-1-reduced2.jpg" />
+              </div> -->
+              <div class="hero--intro__image">
+                <img
+                  alt="Photograph depicting two women embracing. The older woman on the left holds the younger woman's face in her hands"
+                  style="width: 100%; border-radius: 3px"
+                  src="img/group2/reduced/sisters-sm.jpg"
+                />
+                <div
+                  class="attribution attribution--right show-for-large"
+                  style="padding-right: 0"
+                >
+                  My Sister - Door of Hope (November 2017)<br />
+                  Photo by Tish Lampert<br />
+                </div>
+              </div>
+              <div class="attribution attribution--right show-for-mobile">
+                My Sister - Door of Hope (November 2017)<br />
+                Photo by Tish Lampert<br />
+              </div>
+
+              <div>
+                <div class="hero--intro__title">
+                  <h2 class="font--display">
+                    Past Project: Inaugural Event (2021)
+                  </h2>
+                </div>
+
+                <div class="hero--intro__text">
+                  <div class="font-size-medium">
+                    <p style="margin-top: 0">
+                      On October 2, 2021, Movement Without Borders debuted with
+                      a daylong festival of spoken word, dance, film, music, and
+                      activism at Judson Memorial Church.
+                    </p>
+                    <p>
+                      Praised by The New York Times as one of the ten best dance
+                      performance events of 2021, three dynamic New York and San
+                      Diego-based organizations that create support systems for
+                      those navigating the immigration system, and featured
+                      internationally-acclaimed artists.
+                    </p>
+                  </div>
+                  <div style="display: flex">
+                    <a
+                      class="support-us-button"
+                      href="./2021-inagural-event.html"
+                      >Learn more
+                      <svg
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        width="55px"
+                        height="40px"
+                        viewBox="0 0 100 100"
+                        enable-background="new 0 0 100 100"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <path
+                            d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer max-width-container">
+          </div>
+
+          <div>
+            <div>
+              <!-- Community Partners -->
+              <div
+                id="community-partners"
+                style="margin-top: 6em"
+                class="max-width-content"
+              >
+                <div class="hero--intro" style="padding: 0">
+                  <h2>Community Partners</h2>
+                </div>
+                <p class="font-size-medium">
+                  Our community partners inform and guide Etudes for Rough
+                  Sleepers and extend the reach of our work, connecting us with
+                  unhoused neighbors through arts, advocacy, and mutual aid.
+                </p>
+                <p class="font-size-medium">
+                  Current partners include:
+                  <a href="https://iahh.org/about"
+                    >Interfaith Assembly on Homelessness and Housing</a
+                  >,
+                  <a href="https://openheartsinitiative.org/"
+                    >Open Hearts Initiative</a
+                  >, Vocal-New York’s
+                  <a href="https://www.vocal-ny.org/issues/homelessness/"
+                    >Homelessness Union</a
+                  >, <a href="https://kairoscenter.org/">Kairos Center</a>,
+                  Broadway Community’s
+                  <a href="https://www.broadwaycommunity.org/life-skills"
+                    >Life Skills Empowerment Program</a
+                  >, and Judson Memorial Church’s
+                  <a href="https://www.judsoncommons.org/justice"
+                    >Radical Hope Mutual Aid Center</a
+                  >.
+                </p>
+              </div>
+              <!-- Join Our Circle of Supporters -->
+              <div
+                id="supporters"
+                style="margin-top: 6em"
+                class="max-width-content"
+              >
+                <div class="hero--intro" style="padding: 0">
+                  <h2>Join Our Circle of Supporters</h2>
+                </div>
+                <p class="font-size-medium">
+                  Movement Without Borders is grateful to its generous
+                  supporters for believing in this work:
+                </p>
+                <div class="flex" style="margin-top: 2em">
+                  <a
+                    href="https://www.dorisduke.org/"
+                    title="Doris Duke Foundation"
+                  >
+                    <img
+                      style="height: 2.2em"
+                      src="img/partners/dorisdukefoundation.png"
+                      alt="Doris Duke Foundation"
+                    />
+                  </a>
+                  <a href="https://www.tbf.org/" title="The Boston Foundation">
+                    <img
+                      style="height: 2.2em"
+                      src="img/partners/thebostonfoundation.png"
+                      alt="The Boston Foundation"
+                      title="The Boston Foundation"
+                    />
+                  </a>
+                  <a
+                    href="https://harrychapinfoundation.org/"
+                    title="The Harry Chapin Foundation"
+                  >
+                    <img
+                      style="height: 2.8em"
+                      src="img/partners/harrychapinfoundation.png"
+                      alt="The Harry Chapin Foundation"
+                      title="The Harry Chapin Foundation"
+                    />
+                  </a>
+                  <a
+                    href="https://cowlescharitabletrust.org/"
+                    title="The Cowles Charitable Trust"
+                  >
+                    <img
+                      style="margin: 0 1em"
+                      src="img/partners/cowlescharitabletrust.png"
+                      alt="The Cowles Charitable Trust"
+                      title="The Cowles Charitable Trust"
+                    />
+                  </a>
+                  <a href="https://newmusicusa.org/" title="New Music USA">
+                    <img
+                      style="height: 2.5em"
+                      src="img/partners/newmusicusa.png"
+                      alt="New Music USA"
+                      title="New Music USA"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex" class="max-width-content">
+                  <a
+                    class="register-button support-us-button"
+                    href="https://app.thefield.org/profile/Movement-Without-Borders/655104"
+                    >Donate
+                    <svg
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      width="55px"
+                      height="40px"
+                      viewBox="0 0 100 100"
+                      enable-background="new 0 0 100 100"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+
+                  <!-- <a
+                    class="support-us-button"
+                    href="https://secure.givelively.org/donate/judson-memorial-church-inc/movement-without-borders"
+                    >Support Us
+                    <svg
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      width="55px"
+                      height="40px"
+                      viewBox="0 0 100 100"
+                      enable-background="new 0 0 100 100"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M25.333,51.558h44.506L55.107,66.29c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586   s1.024-0.195,1.414-0.586l18.146-18.146c0.781-0.781,0.781-2.047,0-2.828L57.936,29.998c-0.78-0.781-2.048-0.781-2.828,0   c-0.781,0.781-0.781,2.047,0,2.828l14.732,14.732H25.333c-1.104,0-2,0.896-2,2S24.228,51.558,25.333,51.558z"
+                        />
+                      </g></svg
+                  ></a> -->
+                </div>
+                <!-- <div class="info max-width-content">
+                  <p style="font-size: 0.9em" class="font-size-medium">
+                    <em>
+                      For more information about The Field contact: The Field,
+                      228 Park Ave S, Suite 97217, New York, NY 10003, phone:
+                      212-691-6969. A copy of our latest financial report may be
+                      obtained from The Field or from the Office of Attorney
+                      General, Charities Bureau, 120 Broadway, New York, NY
+                      10271.
+                    </em>
+                  </p>
+                </div> -->
+              </div>
+
+              <div
+                class="dashed-box max-width-container"
+                style="margin: 2em auto 4em; line-height: 1.4"
+              >
+                <p s>
+                  To learn more and get involved, contact Richard Colton at
+                  rcolton5678@gmail.com or (978) 201-6234.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="position: relative">
+        <div style="background: #f3f3f3; margin-top: 100px; position: relative">
+          <div
+            aria-hidden="true"
+            class="wave-bottom"
+            style="
+              height: 100px;
+              overflow: hidden;
+              position: absolute;
+              left: 0;
+              width: 100vw;
+              top: -100px;
+            "
+          >
+            <svg
+              class="wave1"
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              style="height: 100%; width: 100vw; position: absolute; top: 0"
+            >
+              <path
+                d="M0.00,49.98 C105.24,160.35 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="fill: #f3f3f3"
+              ></path>
+            </svg>
+          </div>
+          <div class="max-width-content">
+            <p style="margin-bottom: 3em">
+              Movement Without Borders is a sponsored artist with The
+              Performance Zone Inc (dba The Field), a not-for-profit,
+              tax-exempt, 501(c)(3) organization serving the arts community.
+              Contributions to The Field earmarked for Movement Without Borders
+              are tax-deductible to the extent allowed by law.
+            </p>
+            <p>
+              For more information about The Field contact: The Field, 228 Park
+              Ave S, Suite 97217, New York, NY 10003, phone: 212-691-6969. A
+              copy of our latest financial report may be obtained from The Field
+              or from the Office of Attorney General, Charities Bureau, 120
+              Broadway, New York, NY 10271.
+            </p>
+          </div>
+          <!-- <div class="footer max-width-container">
               <p style="margin-bottom: 3em">
                 <em
                   >Movement Without Borders has received, gratefully, lead
@@ -874,8 +760,7 @@
                   <strong>Website</strong> by Elias Jarzombek.
                 </span>
               </div>
-            </div>
-          </div>
+            </div> -->
         </div>
       </div>
     </div>
