@@ -231,4 +231,24 @@ html {
   .nav-cta {
     margin-left: 0.5em;
   }
+
+  .nav-links li {
+    display: none;
+  }
+  #featured-project .hero--intro {
+    flex-direction: column-reverse;
+    padding: 2em !important;
+    margin-bottom: 0;
+  }
+  #featured-project {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .font--display {
+    max-width: 50% !important;
+  }
+}
+
+#featured-project h2.font--display:after {
+  background-color: #89cbbc61;
 }
