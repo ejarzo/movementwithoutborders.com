@@ -23,7 +23,7 @@ p.v2-subtitle {
 }
 
 .flex img {
-  height: 4em;
+  height: 5em;
   width: auto;
   object-fit: contain;
 }
@@ -251,4 +251,20 @@ html {
 
 #featured-project h2.font--display:after {
   background-color: #89cbbc61;
+}
+
+/* Remove all styling from anchor tags in partners section */
+#supporters .flex a {
+  box-shadow: none !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  transition: none !important;
+  position: static !important;
+  display: inline-block !important;
+}
+
+#supporters .flex a:hover {
+  box-shadow: none !important;
+  color: inherit !important;
 }
