@@ -23,15 +23,19 @@
       <div class="nav-container">
         <div>
           <div class="nav-logo">
-            <a href="#home">Movement<br />Without<br />Borders</a>
+            <a href="#home" target="_self"
+              >Movement<br />Without<br />Borders</a
+            >
           </div>
         </div>
         <div style="flex: 1"></div>
 
         <ul class="nav-links">
-          <li><a href="#featured-project">Projects</a></li>
-          <li><a href="#community-partners">Community Partners</a></li>
-          <li><a href="#supporters">Supporters</a></li>
+          <li><a href="#featured-project" target="_self">Projects</a></li>
+          <li>
+            <a href="#community-partners" target="_self">Community Partners</a>
+          </li>
+          <li><a href="#supporters" target="_self">Supporters</a></li>
         </ul>
 
         <div class="nav-cta">
@@ -400,22 +404,30 @@
                 <img src="img/unnamed-1-reduced2.jpg" />
               </div> -->
               <div class="hero--intro__image">
-                <img
-                  alt="Photograph depicting two women embracing. The older woman on the left holds the younger woman's face in her hands"
-                  style="width: 100%; border-radius: 3px"
-                  src="img/group2/reduced/sisters-sm.jpg"
-                />
                 <div
-                  class="attribution attribution--right show-for-large"
-                  style="padding-right: 0"
+                  style="
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    border-radius: 3px;
+                  "
                 >
-                  My Sister - Door of Hope (November 2017)<br />
-                  Photo by Tish Lampert<br />
+                  <iframe
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    "
+                    src="https://www.youtube.com/embed/qB2Sz2akbZ0?si=_VivIq_14ZydaFcr"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
-              </div>
-              <div class="attribution attribution--right show-for-mobile">
-                My Sister - Door of Hope (November 2017)<br />
-                Photo by Tish Lampert<br />
               </div>
 
               <div>
@@ -564,7 +576,7 @@
                     />
                   </a>
                   <a
-                    href="https://www.nyc.gov/site/culture/index.page"
+                    href="https://arts.ny.gov/"
                     title="NYC Council on the Arts"
                   >
                     <img
