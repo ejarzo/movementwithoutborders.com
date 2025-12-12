@@ -1,0 +1,270 @@
+p.v2-subtitle {
+  font-size: 1.5em !important;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+/* .landing p {
+  max-width: 800px;
+  margin:  auto;
+} */
+
+.max-width-content {
+  max-width: 800px;
+  margin: auto auto;
+  padding: 0 1em;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex img {
+  height: 5em;
+  width: auto;
+  object-fit: contain;
+}
+
+/* .landing .max-width-container {
+  max-width: 1400px;
+} */
+
+/* Image-text layout for creative team section */
+.image-text-layout {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin: 2em auto 3em;
+  max-width: 1200px;
+}
+
+.image-text-layout .text-content {
+  flex: 1;
+}
+
+.image-text-layout .image-content {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.image-text-layout .image-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile responsive - stack vertically */
+@media (max-width: 768px) {
+  .image-text-layout {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .image-text-layout .image-content {
+    flex: none;
+    max-width: 100%;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  /* backdrop-filter: blur(10px); */
+  z-index: 1000;
+  padding: 1em 0 2em 0;
+}
+
+.nav-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-cta {
+  margin-left: 2em;
+}
+
+.donate-button {
+  background-color: #f3e847;
+  color: rgb(51, 38, 24);
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "Gotham", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.donate-button:hover {
+  background-color: #e6d13a;
+  transform: translateY(-1px);
+}
+
+.donate-button::after {
+  content: "→";
+  font-size: 0.9em;
+}
+
+.nav-logo a {
+  font-family: "Gotham", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  color: rgb(51, 38, 24);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  box-shadow: none !important;
+  border: none !important;
+  line-height: 0.9;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.nav-logo a:hover {
+  color: #f3e847;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2em;
+}
+
+.nav-links li a {
+  font-family: "Gotham", "Helvetica", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 0.9em;
+  color: rgb(51, 38, 24);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  box-shadow: none !important;
+  font-weight: 200;
+  /* text-decoration: underline; */
+}
+
+.nav-links li a:after {
+  display: none;
+}
+
+.nav-links li a:before {
+  color: #f3e847;
+}
+
+/* Removed underline styles */
+
+/* Compact main title */
+.page-title {
+  line-height: 0.9 !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1em;
+  }
+
+  .nav-logo a {
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  .nav-links {
+    gap: 1em;
+  }
+
+  .nav-links li a {
+    font-size: 0.8em;
+  }
+
+  .donate-button {
+    font-size: 0.75em;
+    padding: 0.4em 0.7em;
+  }
+
+  .nav-cta {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 0.5em;
+  }
+
+  .nav-links li a {
+    font-size: 0.75em;
+  }
+
+  .donate-button {
+    font-size: 0.7em;
+    padding: 0.3em 0.6em;
+  }
+
+  .nav-cta {
+    margin-left: 0.5em;
+  }
+
+  .nav-links li {
+    display: none;
+  }
+  #featured-project .hero--intro {
+    flex-direction: column-reverse;
+    padding: 2em !important;
+    margin-bottom: 0;
+  }
+  #featured-project {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .font--display {
+    max-width: 50% !important;
+  }
+}
+
+#featured-project h2.font--display:after {
+  background-color: #89cbbc61;
+}
+
+/* Remove all styling from anchor tags in partners section */
+#supporters .flex a {
+  box-shadow: none !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  transition: none !important;
+  position: static !important;
+  display: inline-block !important;
+}
+
+#supporters .flex a:hover {
+  box-shadow: none !important;
+  color: inherit !important;
+}
